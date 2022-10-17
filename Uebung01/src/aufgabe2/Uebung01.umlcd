@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_wP0sEE3_Ee22lJTT8mA7Iw">
+  <modelElement href="Uebung01.uml#_wgBEME3_Ee22lJTT8mA7Iw"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wlcWwE3_Ee22lJTT8mA7Iw" name="Student">
+    <modelElement href="Uebung01.uml#_wgC5YE3_Ee22lJTT8mA7Iw"/>
+    <visualProperties xmi:id="_wlcWwU3_Ee22lJTT8mA7Iw" position="565.0,393.0"/>
+    <visibility xmi:id="_wlcWwk3_Ee22lJTT8mA7Iw" label="+"/>
+    <attributes xmi:id="_3gVsUE3_Ee22lJTT8mA7Iw" name="Vorname">
+      <modelElement href="Uebung01.uml#_3gVFQE3_Ee22lJTT8mA7Iw"/>
+      <visibility xmi:id="_3gWTYE3_Ee22lJTT8mA7Iw" label="+"/>
+      <cardinality xmi:id="_3gWTYU3_Ee22lJTT8mA7Iw" label="1" max="1" min="1"/>
+      <type xmi:id="_3gWTYk3_Ee22lJTT8mA7Iw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_4g5KYE3_Ee22lJTT8mA7Iw" name="Nachname">
+      <modelElement href="Uebung01.uml#_4g4jUE3_Ee22lJTT8mA7Iw"/>
+      <visibility xmi:id="_4g5KYU3_Ee22lJTT8mA7Iw" label="+"/>
+      <cardinality xmi:id="_4g5KYk3_Ee22lJTT8mA7Iw" label="1" max="1" min="1"/>
+      <type xmi:id="_4g5KY03_Ee22lJTT8mA7Iw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_5ZXqgU3_Ee22lJTT8mA7Iw" name="Studentenkürzel">
+      <modelElement href="Uebung01.uml#_5ZXqgE3_Ee22lJTT8mA7Iw"/>
+      <visibility xmi:id="_5ZXqgk3_Ee22lJTT8mA7Iw" label="+"/>
+      <cardinality xmi:id="_5ZXqg03_Ee22lJTT8mA7Iw" label="1" max="1" min="1"/>
+      <type xmi:id="_5ZXqhE3_Ee22lJTT8mA7Iw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_6qde8E3_Ee22lJTT8mA7Iw" name="getName">
+      <modelElement href="Uebung01.uml#_6qc34E3_Ee22lJTT8mA7Iw"/>
+      <visibility xmi:id="_6qde8U3_Ee22lJTT8mA7Iw" label="+"/>
+      <cardinality xmi:id="_6qde8k3_Ee22lJTT8mA7Iw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_6qde803_Ee22lJTT8mA7Iw">
+        <modelElement href="Uebung01.uml#_6qc34U3_Ee22lJTT8mA7Iw"/>
+        <type xmi:id="_6qde9E3_Ee22lJTT8mA7Iw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Gs8j8E4BEe22lJTT8mA7Iw" name="Student">
+      <modelElement href="Uebung01.uml#_Gs4SgE4BEe22lJTT8mA7Iw"/>
+      <keywords xmi:id="_H1LXUE4BEe22lJTT8mA7Iw" keyword="create"/>
+      <visibility xmi:id="_Gs8j8U4BEe22lJTT8mA7Iw" label="+"/>
+      <cardinality xmi:id="_Gs8j8k4BEe22lJTT8mA7Iw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Gs8j804BEe22lJTT8mA7Iw">
+        <modelElement href="Uebung01.uml#_Gs4SgU4BEe22lJTT8mA7Iw"/>
+        <type xmi:id="_Gs8j9E4BEe22lJTT8mA7Iw" name="Student">
+          <modelElement href="Uebung01.uml#_wgC5YE3_Ee22lJTT8mA7Iw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Gs8j9U4BEe22lJTT8mA7Iw" name="Vorname">
+        <modelElement href="Uebung01.uml#_Gs45kE4BEe22lJTT8mA7Iw"/>
+        <cardinality xmi:id="_Gs8j9k4BEe22lJTT8mA7Iw" label="1" max="1" min="1"/>
+        <type xmi:id="_Gs8j904BEe22lJTT8mA7Iw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Gs8j-E4BEe22lJTT8mA7Iw" name="Nachname">
+        <modelElement href="Uebung01.uml#_Gs45kU4BEe22lJTT8mA7Iw"/>
+        <cardinality xmi:id="_Gs8j-U4BEe22lJTT8mA7Iw" label="1" max="1" min="1"/>
+        <type xmi:id="_Gs8j-k4BEe22lJTT8mA7Iw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
