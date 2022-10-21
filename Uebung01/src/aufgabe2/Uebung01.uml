@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_waC_EE3_Ee22lJTT8mA7Iw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_waDmIE3_Ee22lJTT8mA7Iw" source="codegen">
         <details xmi:id="_waDmIU3_Ee22lJTT8mA7Iw" key="codegenDirectory" value="/Uebung01/src"/>
-        <details xmi:id="_wlVpEE3_Ee22lJTT8mA7Iw" key="AssociatedSourceCode" value="/Uebung01/src/aufgabe2/Student.java;2496369927/1;"/>
+        <details xmi:id="_wlVpEE3_Ee22lJTT8mA7Iw" key="AssociatedSourceCode" value="/Uebung01/src/aufgabe2/Student.java;1005833943/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_wf8ywE3_Ee22lJTT8mA7Iw">

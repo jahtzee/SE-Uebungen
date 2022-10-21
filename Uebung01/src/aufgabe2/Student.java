@@ -1,3 +1,8 @@
+/**
+ * @author Jan Zimmer
+ * @date 21.10.2022
+ */
+
 package aufgabe2;
 
 public class Student {
