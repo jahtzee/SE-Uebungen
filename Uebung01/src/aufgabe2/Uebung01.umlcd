@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_wP0sEE3_Ee22lJTT8mA7Iw">
   <modelElement href="Uebung01.uml#_wgBEME3_Ee22lJTT8mA7Iw"/>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wlcWwE3_Ee22lJTT8mA7Iw" name="Student">
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_slRnwFLzEe22BczyhNpYlQ" sourceAnchor="294.0,115.0" targetAnchor="0.0,15.0" target="_j_onoFLzEe22BczyhNpYlQ" source="_lCCf0VLzEe22BczyhNpYlQ">
+    <modelElement href="Uebung01.uml#_slEzcFLzEe22BczyhNpYlQ"/>
+    <visualProperties xmi:id="_slSO0FLzEe22BczyhNpYlQ"/>
+    <nameVisual xmi:id="_slSO0VLzEe22BczyhNpYlQ" text="">
+      <visualProperties xmi:id="_so7_wVLzEe22BczyhNpYlQ" position="20.294117647058783,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_slSO0lLzEe22BczyhNpYlQ" aggregationKind="NONE" name="vorlesung" navigable="true">
+      <modelElement href="Uebung01.uml#_slEzcVLzEe22BczyhNpYlQ"/>
+      <visualProperties xmi:id="_so7_wFLzEe22BczyhNpYlQ" position="39.66666666666663,-47.0"/>
+      <visibility xmi:id="_slSO01LzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_slSO1FLzEe22BczyhNpYlQ" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_slSO1VLzEe22BczyhNpYlQ" aggregationKind="NONE" name="professor" navigable="true">
+      <modelElement href="Uebung01.uml#_slGBklLzEe22BczyhNpYlQ"/>
+      <visualProperties xmi:id="_so7_wlLzEe22BczyhNpYlQ" position="-104.66666666666652,2.0"/>
+      <visibility xmi:id="_slSO1lLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_slSO11LzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_uKB_EFLzEe22BczyhNpYlQ" sourceAnchor="129.0,146.0" targetAnchor="180.0,0.0" target="_wlcWwE3_Ee22lJTT8mA7Iw" source="_lCCf0VLzEe22BczyhNpYlQ">
+    <modelElement href="Uebung01.uml#_uKAw8FLzEe22BczyhNpYlQ"/>
+    <visualProperties xmi:id="_uKB_EVLzEe22BczyhNpYlQ"/>
+    <nameVisual xmi:id="_uKB_ElLzEe22BczyhNpYlQ" text="">
+      <visualProperties xmi:id="_uMQMoFLzEe22BczyhNpYlQ" position="2.0,-3.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_uKB_E1LzEe22BczyhNpYlQ" aggregationKind="NONE" name="vorlesung" navigable="true">
+      <modelElement href="Uebung01.uml#_uKAw8VLzEe22BczyhNpYlQ"/>
+      <visualProperties xmi:id="_uMPlkVLzEe22BczyhNpYlQ" position="41.0,1.0"/>
+      <visibility xmi:id="_uKB_FFLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_uKB_FVLzEe22BczyhNpYlQ" label="*" max="-1"/>
+    </sourceRole>
+    <targetRole xmi:id="_uKB_FlLzEe22BczyhNpYlQ" aggregationKind="NONE" name="student" navigable="true">
+      <modelElement href="Uebung01.uml#_uKAw9FLzEe22BczyhNpYlQ"/>
+      <visualProperties xmi:id="_uMQMoVLzEe22BczyhNpYlQ" position="-57.0,-57.0"/>
+      <visibility xmi:id="_uKB_F1LzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_uKB_GFLzEe22BczyhNpYlQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lCCf0VLzEe22BczyhNpYlQ" name="Vorlesung" associationsOut="_slRnwFLzEe22BczyhNpYlQ _uKB_EFLzEe22BczyhNpYlQ">
+    <modelElement href="Uebung01.uml#_lCCf0FLzEe22BczyhNpYlQ"/>
+    <visualProperties xmi:id="_lCCf0lLzEe22BczyhNpYlQ" position="616.0,169.0" size="294.0,146.0"/>
+    <visibility xmi:id="_lCCf01LzEe22BczyhNpYlQ" label="+"/>
+    <attributes xmi:id="_qNqQIVLzEe22BczyhNpYlQ" name="titel">
+      <modelElement href="Uebung01.uml#_qNqQIFLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_qNqQIlLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_qNqQI1LzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_qNqQJFLzEe22BczyhNpYlQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_slS14FLzEe22BczyhNpYlQ" name="professor">
+      <modelElement href="Uebung01.uml#_slGBklLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_slS14VLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_slS14lLzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_slS141LzEe22BczyhNpYlQ" name="Professor">
+        <modelElement href="Uebung01.uml#_j_nZgFLzEe22BczyhNpYlQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_uKCmIFLzEe22BczyhNpYlQ" name="student">
+      <modelElement href="Uebung01.uml#_uKAw9FLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_uKCmIVLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_uKCmIlLzEe22BczyhNpYlQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_uKCmI1LzEe22BczyhNpYlQ" name="Student">
+        <modelElement href="Uebung01.uml#_wgC5YE3_Ee22lJTT8mA7Iw"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_j_onoFLzEe22BczyhNpYlQ" name="Professor" associationsIn="_slRnwFLzEe22BczyhNpYlQ">
+    <modelElement href="Uebung01.uml#_j_nZgFLzEe22BczyhNpYlQ"/>
+    <visualProperties xmi:id="_j_onoVLzEe22BczyhNpYlQ" position="1095.0,269.0" size="372.0,238.0"/>
+    <visibility xmi:id="_j_onolLzEe22BczyhNpYlQ" label="+"/>
+    <attributes xmi:id="_nbdOQFLzEe22BczyhNpYlQ" name="Vorname">
+      <modelElement href="Uebung01.uml#_nbcnMFLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_nbdOQVLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_nbdOQlLzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_nbdOQ1LzEe22BczyhNpYlQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_oJ96EFLzEe22BczyhNpYlQ" name="Nachname">
+      <modelElement href="Uebung01.uml#_oJ9TAFLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_oJ96EVLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_oJ96ElLzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_oJ96E1LzEe22BczyhNpYlQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_o7Z-EFLzEe22BczyhNpYlQ" name="Fachbereich">
+      <modelElement href="Uebung01.uml#_o7ZXAFLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_o7Z-EVLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_o7Z-ElLzEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_o7Z-E1LzEe22BczyhNpYlQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_slSO2FLzEe22BczyhNpYlQ" name="vorlesung">
+      <modelElement href="Uebung01.uml#_slEzcVLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_slSO2VLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_slSO2lLzEe22BczyhNpYlQ" label="*" max="-1"/>
+      <type xmi:id="_slSO21LzEe22BczyhNpYlQ" name="Vorlesung">
+        <modelElement href="Uebung01.uml#_lCCf0FLzEe22BczyhNpYlQ"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_wlcWwE3_Ee22lJTT8mA7Iw" name="Student" associationsIn="_uKB_EFLzEe22BczyhNpYlQ">
     <modelElement href="Uebung01.uml#_wgC5YE3_Ee22lJTT8mA7Iw"/>
-    <visualProperties xmi:id="_wlcWwU3_Ee22lJTT8mA7Iw" position="565.0,393.0"/>
+    <visualProperties xmi:id="_wlcWwU3_Ee22lJTT8mA7Iw" position="565.0,393.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_wlcWwk3_Ee22lJTT8mA7Iw" label="+"/>
     <attributes xmi:id="_3gVsUE3_Ee22lJTT8mA7Iw" name="Vorname">
       <modelElement href="Uebung01.uml#_3gVFQE3_Ee22lJTT8mA7Iw"/>
@@ -27,6 +131,41 @@
       <cardinality xmi:id="_5ZXqg03_Ee22lJTT8mA7Iw" label="1" max="1" min="1"/>
       <type xmi:id="_5ZXqhE3_Ee22lJTT8mA7Iw" name="String">
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_vkVr0FLxEe22BczyhNpYlQ" name="alter">
+      <modelElement href="Uebung01.uml#_vkTPkFLxEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_vkVr0VLxEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_vkVr0lLxEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_vkVr01LxEe22BczyhNpYlQ" name="Integer">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ymWrUFLxEe22BczyhNpYlQ" name="matrikelnummer">
+      <modelElement href="Uebung01.uml#_ymWEQFLxEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_ymWrUVLxEe22BczyhNpYlQ" label="-"/>
+      <cardinality xmi:id="_ymWrUlLxEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_ymWrU1LxEe22BczyhNpYlQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HXdiwFLyEe22BczyhNpYlQ" name="noten">
+      <modelElement href="Uebung01.uml#_HXcUoFLyEe22BczyhNpYlQ"/>
+      <stereotypes xmi:id="_1v0hMFLyEe22BczyhNpYlQ" name="Generics">
+        <modelElement href="Uebung01.uml#_1vPSYFLyEe22BczyhNpYlQ"/>
+      </stereotypes>
+      <visibility xmi:id="_HXdiwVLyEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_HXdiwlLyEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <type xmi:id="_AzVcgFL0Ee22BczyhNpYlQ" name="ArrayList">
+        <modelElement href="Uebung01.uml#_7XFrsFLyEe22BczyhNpYlQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_uKB_GVLzEe22BczyhNpYlQ" name="vorlesung">
+      <modelElement href="Uebung01.uml#_uKAw8VLzEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_uKB_GlLzEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_uKB_G1LzEe22BczyhNpYlQ" label="*" max="-1"/>
+      <type xmi:id="_uKB_HFLzEe22BczyhNpYlQ" name="Vorlesung">
+        <modelElement href="Uebung01.uml#_lCCf0FLzEe22BczyhNpYlQ"/>
       </type>
     </attributes>
     <operations xmi:id="_6qde8E3_Ee22lJTT8mA7Iw" name="getName">
@@ -63,6 +202,29 @@
         <cardinality xmi:id="_Gs8j-U4BEe22lJTT8mA7Iw" label="1" max="1" min="1"/>
         <type xmi:id="_Gs8j-k4BEe22lJTT8mA7Iw" name="String">
           <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_XOK8wlLyEe22BczyhNpYlQ" name="berechneDurchschnittsNote">
+      <modelElement href="Uebung01.uml#_XOK8wFLyEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_XOK8w1LyEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_XOK8xFLyEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_XOK8xVLyEe22BczyhNpYlQ">
+        <modelElement href="Uebung01.uml#_XOK8wVLyEe22BczyhNpYlQ"/>
+        <type xmi:id="_eoCGQFLyEe22BczyhNpYlQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ai9uUlLyEe22BczyhNpYlQ" name="hinzufuegenNote">
+      <modelElement href="Uebung01.uml#_ai9uUFLyEe22BczyhNpYlQ"/>
+      <visibility xmi:id="_ai9uU1LyEe22BczyhNpYlQ" label="+"/>
+      <cardinality xmi:id="_ai9uVFLyEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ai9uVVLyEe22BczyhNpYlQ" name="note">
+        <modelElement href="Uebung01.uml#_ai9uUVLyEe22BczyhNpYlQ"/>
+        <cardinality xmi:id="_ai9uVlLyEe22BczyhNpYlQ" label="1" max="1" min="1"/>
+        <type xmi:id="_ai9uV1LyEe22BczyhNpYlQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
         </type>
       </parameters>
     </operations>

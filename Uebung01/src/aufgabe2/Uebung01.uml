@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_waC_EE3_Ee22lJTT8mA7Iw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_waDmIE3_Ee22lJTT8mA7Iw" source="codegen">
         <details xmi:id="_waDmIU3_Ee22lJTT8mA7Iw" key="codegenDirectory" value="/Uebung01/src"/>
-        <details xmi:id="_wlVpEE3_Ee22lJTT8mA7Iw" key="AssociatedSourceCode" value="/Uebung01/src/aufgabe2/Student.java;1005833943/1;"/>
+        <details xmi:id="_wlVpEE3_Ee22lJTT8mA7Iw" key="AssociatedSourceCode" value="/Uebung01/src/aufgabe2/Student.java;2515814481/1;/Uebung01/src/aufgabe2/Professor.java;4131067600/1;/Uebung01/src/aufgabe2/Vorlesung.java;1251020403/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_wf8ywE3_Ee22lJTT8mA7Iw">
@@ -45,6 +45,17 @@
         <ownedAttribute xmi:id="_5ZXqgE3_Ee22lJTT8mA7Iw" name="Studentenkürzel">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_vkTPkFLxEe22BczyhNpYlQ" name="alter">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ymWEQFLxEe22BczyhNpYlQ" name="matrikelnummer" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HXcUoFLyEe22BczyhNpYlQ" name="noten" type="_7XFrsFLyEe22BczyhNpYlQ"/>
+        <ownedAttribute xmi:id="_uKAw8VLzEe22BczyhNpYlQ" name="vorlesung" type="_lCCf0FLzEe22BczyhNpYlQ" association="_uKAw8FLzEe22BczyhNpYlQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uKAw8lLzEe22BczyhNpYlQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uKAw81LzEe22BczyhNpYlQ" value="*"/>
+        </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wgMDUE3_Ee22lJTT8mA7Iw" name="main">
           <ownedParameter xmi:id="_wgMDUU3_Ee22lJTT8mA7Iw" name="args">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -62,7 +73,7 @@
           </ownedParameter>
           <language>java</language>
           <body>return this.Nachname+&quot;,&quot;+this.Vorname;&#xD;
-</body>
+   </body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Va0toE4BEe22lJTT8mA7Iw" name="Student" specification="_Gs4SgE4BEe22lJTT8mA7Iw">
           <ownedParameter xmi:id="_Va0toU4BEe22lJTT8mA7Iw" type="_wgC5YE3_Ee22lJTT8mA7Iw" direction="return">
@@ -76,7 +87,28 @@
           </ownedParameter>
           <language>java</language>
           <body>this.Vorname = Vorname;&#xD;
-   this.Nachname = Nachname;&#xD;
+      this.Nachname = Nachname;&#xD;
+   </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ek9wgFLzEe22BczyhNpYlQ" name="berechneDurchschnittsNote" specification="_XOK8wFLyEe22BczyhNpYlQ">
+          <ownedParameter xmi:id="_Ek9wgVLzEe22BczyhNpYlQ" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Double e = 0.0;&#xD;
+	   for (Double n : noten) {&#xD;
+ 	  e+=n;&#xD;
+   }&#xD;
+	  return e/noten.size();&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_YbU28FLzEe22BczyhNpYlQ" name="hinzufuegenNote" specification="_ai9uUFLyEe22BczyhNpYlQ">
+          <ownedParameter xmi:id="_YbU28VLzEe22BczyhNpYlQ" name="note">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>noten.add(note);&#xD;
 </body>
         </ownedBehavior>
         <ownedOperation xmi:id="_6qc34E3_Ee22lJTT8mA7Iw" name="getName" method="_Ro234E4BEe22lJTT8mA7Iw">
@@ -96,6 +128,57 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
         </ownedOperation>
+        <ownedOperation xmi:id="_XOK8wFLyEe22BczyhNpYlQ" name="berechneDurchschnittsNote" method="_Ek9wgFLzEe22BczyhNpYlQ">
+          <ownedParameter xmi:id="_XOK8wVLyEe22BczyhNpYlQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ai9uUFLyEe22BczyhNpYlQ" name="hinzufuegenNote" method="_YbU28FLzEe22BczyhNpYlQ">
+          <ownedParameter xmi:id="_ai9uUVLyEe22BczyhNpYlQ" name="note">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7XFrsFLyEe22BczyhNpYlQ" name="ArrayList"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_j_nZgFLzEe22BczyhNpYlQ" name="Professor">
+        <ownedAttribute xmi:id="_nbcnMFLzEe22BczyhNpYlQ" name="Vorname">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_oJ9TAFLzEe22BczyhNpYlQ" name="Nachname">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_o7ZXAFLzEe22BczyhNpYlQ" name="Fachbereich">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_slEzcVLzEe22BczyhNpYlQ" name="vorlesung" type="_lCCf0FLzEe22BczyhNpYlQ" association="_slEzcFLzEe22BczyhNpYlQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slGBkFLzEe22BczyhNpYlQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_slGBkVLzEe22BczyhNpYlQ" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lCCf0FLzEe22BczyhNpYlQ" name="Vorlesung">
+        <ownedAttribute xmi:id="_qNqQIFLzEe22BczyhNpYlQ" name="titel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_slGBklLzEe22BczyhNpYlQ" name="professor" type="_j_nZgFLzEe22BczyhNpYlQ" association="_slEzcFLzEe22BczyhNpYlQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_slGBk1LzEe22BczyhNpYlQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_slGBlFLzEe22BczyhNpYlQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_uKAw9FLzEe22BczyhNpYlQ" name="student" type="_wgC5YE3_Ee22lJTT8mA7Iw" association="_uKAw8FLzEe22BczyhNpYlQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uKAw9VLzEe22BczyhNpYlQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uKAw9lLzEe22BczyhNpYlQ" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_slEzcFLzEe22BczyhNpYlQ" name="" memberEnd="_slEzcVLzEe22BczyhNpYlQ _slGBklLzEe22BczyhNpYlQ"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uKAw8FLzEe22BczyhNpYlQ" name="" memberEnd="_uKAw8VLzEe22BczyhNpYlQ _uKAw9FLzEe22BczyhNpYlQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_XOKVsFLyEe22BczyhNpYlQ" name="Double"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1vUK4FLyEe22BczyhNpYlQ" name="ArrayList"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1vUx8FLyEe22BczyhNpYlQ" name="null">
+      <packagedElement xmi:type="uml:Class" xmi:id="_1vUx8VLyEe22BczyhNpYlQ" name="ArrayList"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_851Q0FLyEe22BczyhNpYlQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_851Q0VLyEe22BczyhNpYlQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_8547MFLyEe22BczyhNpYlQ" name="ArrayList"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:id="_waFbUE3_Ee22lJTT8mA7Iw">
@@ -108,4 +191,10 @@
   <UMLLabProfile:TargetLanguage xmi:id="_waNXIE3_Ee22lJTT8mA7Iw" base_Package="_vhJBIE3_Ee22lJTT8mA7Iw">
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:UnresolvedElement xmi:id="_XOKVsVLyEe22BczyhNpYlQ" base_Element="_XOKVsFLyEe22BczyhNpYlQ"/>
+  <UMLLabProfile:Generics xmi:id="_1vPSYFLyEe22BczyhNpYlQ" genericsValue="Double" base_Element="_HXcUoFLyEe22BczyhNpYlQ"/>
+  <UMLLabProfile:Reference xmi:id="_1vUK4VLyEe22BczyhNpYlQ" base_Element="_1vUK4FLyEe22BczyhNpYlQ"/>
+  <UMLLabProfile:Reference xmi:id="_1vVZAFLyEe22BczyhNpYlQ" base_Element="_1vUx8VLyEe22BczyhNpYlQ"/>
+  <UMLLabProfile:Reference xmi:id="_7XGSwFLyEe22BczyhNpYlQ" base_Element="_7XFrsFLyEe22BczyhNpYlQ"/>
+  <UMLLabProfile:Reference xmi:id="_855iQFLyEe22BczyhNpYlQ" base_Element="_8547MFLyEe22BczyhNpYlQ"/>
 </xmi:XMI>
