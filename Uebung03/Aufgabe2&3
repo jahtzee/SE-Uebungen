@@ -1,0 +1,23 @@
+Aufg. 2
+
+a) Wie unterscheiden sich die beiden Varianten inhaltlich?
+	
+In 1) ist eine Tierart eine Generalisierung von Individuum. Umgekehrt ist das Individuum eine Spezialisierung der Tierart. In 2) sind Tierart und Individuum miteinander assoziiert.
+Generalisierung und Assoziation sind beides Beziehungen zwischen Objekten, aber eine Generalisierung ist keine Assoziation und weisst daher auch keine Kardinalitäten auf.
+
+b) Welche Variante würden Sie vorziehen? Warum?
+
+Das ist kontextabhängig. Steht die Parent-Child-Beziehung im Vordergrund, z.B. weil hervorgehoben werden soll, dass Individuen Attribute ihrer Elternklasse erben, so ist 1) zu bevorzugen.
+Steht die Assoziation und Multiplizität im Vordergrund, z.B. weil objektrelationale Abbildung zum Einsatz kommt und die Klassen auch als Tabellen in einer relationalen Datenbank existieren, kann 2) gewählt werden, um das zu verdeutlichen.
+
+
+Aufg. 3
+
+Assoziation: Halter füttert Katze. Katze erfreut Halter.
+	Komposition: Loch ist Teil von Schweizer Käse. Das Teilobjekt ist existenziell abhängig vom Ganzen.
+	Aggregation: Perle ist Teil von Kette. Das Teilobjekt ist nicht existenziell abhängig vom Ganzen.
+	
+Kardinalitäten:
+1..1 Jeder Patient hat eine Patientenakte. Jede Patientenakte hat einen Patient.
+1..n Jeder Hausarzt hat n Patienten. Jeder Patient hat einen Hausarzt.
+n..m Jeder Patient nimmt n Medikamente. Jedes Medikament wird von n Patienten genommen.

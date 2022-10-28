@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_2SMJwFaoEe2jUdv_GwdGOg" name="Uebung03">
+    <eAnnotations xmi:id="_3LE5kFaoEe2jUdv_GwdGOg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_3LE5kVaoEe2jUdv_GwdGOg" source="codegen">
+        <details xmi:id="_3LE5klaoEe2jUdv_GwdGOg" key="codegenDirectory" value="/Uebung03/src"/>
+        <details xmi:id="_3WoCQFaoEe2jUdv_GwdGOg" key="AssociatedSourceCode" value="/Uebung03/src/Mitarbeiter.java;1241240974/1;/Uebung03/src/Raum.java;1115530511/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_E08hMFasEe2jUdv_GwdGOg" source="dangling-refs"/>
+    </eAnnotations>
+    <elementImport xmi:id="_7IyFQFaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFQVaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFQlaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFQ1aoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFRFaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFRVaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFRlaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_7IyFR1aoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_7LO8UFaoEe2jUdv_GwdGOg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_G3HfMFaqEe2jUdv_GwdGOg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_G3HfMVaqEe2jUdv_GwdGOg" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_G3LJkFaqEe2jUdv_GwdGOg" name="HashSet"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_G3LwoVaqEe2jUdv_GwdGOg" name="Set"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3RdOYFaoEe2jUdv_GwdGOg" name="Mitarbeiter">
+      <ownedComment xmi:id="_ViJ60larEe2jUdv_GwdGOg">
+        <body>@author Jan Zimmer&#xD;
+last modified 28.10.2022</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_8jzRwFaoEe2jUdv_GwdGOg" name="personalNr" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GjjfclapEe2jUdv_GwdGOg" name="raum" type="_3RfqoFaoEe2jUdv_GwdGOg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gjjfc1apEe2jUdv_GwdGOg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GjjfdFapEe2jUdv_GwdGOg" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ViJTxVarEe2jUdv_GwdGOg" name="Mitarbeiter" specification="_ViJTwFarEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_ViJ60FarEe2jUdv_GwdGOg" name="nr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ViJ60VarEe2jUdv_GwdGOg" type="_3RdOYFaoEe2jUdv_GwdGOg" direction="return"/>
+        <language>java</language>
+        <body>this.setPersonalNr(nr);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_ViJTwFarEe2jUdv_GwdGOg" name="Mitarbeiter" method="_ViJTxVarEe2jUdv_GwdGOg">
+        <eAnnotations xmi:id="_ViJTw1arEe2jUdv_GwdGOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_ViJTxFarEe2jUdv_GwdGOg" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_ViJTwVarEe2jUdv_GwdGOg" name="nr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ViJTwlarEe2jUdv_GwdGOg" type="_3RdOYFaoEe2jUdv_GwdGOg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3RfqoFaoEe2jUdv_GwdGOg" name="Raum">
+      <ownedComment xmi:id="_LUleIFasEe2jUdv_GwdGOg">
+        <body>@author Jan Zimmer&#xD;
+last modified: 28.10.2022</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_7aRd4FaoEe2jUdv_GwdGOg" name="raumNr" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Gji4YVapEe2jUdv_GwdGOg" name="mitarbeiter" type="_3RdOYFaoEe2jUdv_GwdGOg" isReadOnly="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GjjfcFapEe2jUdv_GwdGOg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GjjfcVapEe2jUdv_GwdGOg" value="*"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_KX2bAFaqEe2jUdv_GwdGOg" name="mitarbeiterZuweisen" specification="_G3IGQFaqEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_KX2bAVaqEe2jUdv_GwdGOg" name="m" type="_3RdOYFaoEe2jUdv_GwdGOg"/>
+        <language>java</language>
+        <body>m.setRaum(this);&#xD;
+	   this.mitarbeiter.add(m);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3N8VcFaqEe2jUdv_GwdGOg" name="mitarbeiterEntfernen" specification="_3N7uYFaqEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_3N8VcVaqEe2jUdv_GwdGOg" name="m" type="_3RdOYFaoEe2jUdv_GwdGOg"/>
+        <language>java</language>
+        <body>mitarbeiter.removeIf(e -> (e.getPersonalNr() == m.getPersonalNr()));&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SGoPIFarEe2jUdv_GwdGOg" name="Raum" specification="_SGnBAFarEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_SGoPIVarEe2jUdv_GwdGOg" name="nr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_SGoPIlarEe2jUdv_GwdGOg" type="_3RfqoFaoEe2jUdv_GwdGOg" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.setRaumNr(nr);&#xD;
+	      if (this.mitarbeiter == null) {&#xD;
+	          this.mitarbeiter = new HashSet&lt;Mitarbeiter>();&#xD;
+	       }&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_SGoPI1arEe2jUdv_GwdGOg" name="main" specification="_9ZWHwFaqEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_SGoPJFarEe2jUdv_GwdGOg" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SGoPJVarEe2jUdv_GwdGOg" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// test&#xD;
+	   Raum h234 = new Raum(234);&#xD;
+	   Mitarbeiter amueller = new Mitarbeiter(1337);&#xD;
+	   Mitarbeiter jdoe = new Mitarbeiter(001);&#xD;
+	   h234.mitarbeiterZuweisen(amueller);&#xD;
+	   h234.mitarbeiterZuweisen(jdoe);&#xD;
+	   h234.mitarbeiterEntfernen(jdoe);&#xD;
+	   System.out.println(&quot;Mitarbeiter in Raum h234:&quot;);&#xD;
+	   for (Mitarbeiter m : h234.getMitarbeiter())&#xD;
+		   System.out.println(m.getPersonalNr());&#xD;
+	   // \test&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_G3IGQFaqEe2jUdv_GwdGOg" name="mitarbeiterZuweisen" method="_KX2bAFaqEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_G3IGQVaqEe2jUdv_GwdGOg" name="m" type="_3RdOYFaoEe2jUdv_GwdGOg"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_3N7uYFaqEe2jUdv_GwdGOg" name="mitarbeiterEntfernen" method="_3N8VcFaqEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_3N7uYVaqEe2jUdv_GwdGOg" name="m" type="_3RdOYFaoEe2jUdv_GwdGOg"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_9ZWHwFaqEe2jUdv_GwdGOg" name="main" isStatic="true" method="_SGoPI1arEe2jUdv_GwdGOg">
+        <ownedParameter xmi:id="_9ZWHwVaqEe2jUdv_GwdGOg" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZWu0VaqEe2jUdv_GwdGOg" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SGnBAFarEe2jUdv_GwdGOg" name="Raum" method="_SGoPIFarEe2jUdv_GwdGOg">
+        <eAnnotations xmi:id="_SGnBA1arEe2jUdv_GwdGOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_SGnBBFarEe2jUdv_GwdGOg" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_SGnBAVarEe2jUdv_GwdGOg" name="nr">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_SGnBAlarEe2jUdv_GwdGOg" type="_3RfqoFaoEe2jUdv_GwdGOg" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_3LGuwFaoEe2jUdv_GwdGOg">
+      <eAnnotations xmi:id="_3LJyEFaoEe2jUdv_GwdGOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_3LQfwFaoEe2jUdv_GwdGOg" base_Package="_2SMJwFaoEe2jUdv_GwdGOg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_G3LwoFaqEe2jUdv_GwdGOg" base_Element="_G3LJkFaqEe2jUdv_GwdGOg"/>
+  <UMLLabProfile:Reference xmi:id="_G3MXsFaqEe2jUdv_GwdGOg" base_Element="_G3LwoVaqEe2jUdv_GwdGOg"/>
+</xmi:XMI>

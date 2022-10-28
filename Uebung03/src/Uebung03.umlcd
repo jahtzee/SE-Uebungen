@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_3E3j4FaoEe2jUdv_GwdGOg">
+  <modelElement href="Uebung03.uml#_2SMJwFaoEe2jUdv_GwdGOg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ViOzUFarEe2jUdv_GwdGOg" targetItem="_3XI_oFaoEe2jUdv_GwdGOg" sourceItem="_ViOMQFarEe2jUdv_GwdGOg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_LW2vAFasEe2jUdv_GwdGOg" targetItem="_3WuI4FaoEe2jUdv_GwdGOg" sourceItem="_LW050FasEe2jUdv_GwdGOg"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_3WuI4FaoEe2jUdv_GwdGOg" comments="_LW050FasEe2jUdv_GwdGOg" targetConnectionVisual="_LW2vAFasEe2jUdv_GwdGOg" name="Raum">
+    <modelElement href="Uebung03.uml#_3RfqoFaoEe2jUdv_GwdGOg"/>
+    <visualProperties xmi:id="_3WuI4VaoEe2jUdv_GwdGOg" position="419.0,298.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_3WuI4laoEe2jUdv_GwdGOg" label="+"/>
+    <attributes xmi:id="_7aTTEFaoEe2jUdv_GwdGOg" name="raumNr">
+      <modelElement href="Uebung03.uml#_7aRd4FaoEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_7aTTEVaoEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_7aTTElaoEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <type xmi:id="_7aTTE1aoEe2jUdv_GwdGOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GjlUoFapEe2jUdv_GwdGOg" name="mitarbeiter">
+      <modelElement href="Uebung03.uml#_Gji4YVapEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_GjlUoVapEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_GjlUolapEe2jUdv_GwdGOg" label="*" max="-1"/>
+      <type xmi:id="_GjlUo1apEe2jUdv_GwdGOg" name="Mitarbeiter">
+        <modelElement href="Uebung03.uml#_3RdOYFaoEe2jUdv_GwdGOg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_G3R3QFaqEe2jUdv_GwdGOg" name="mitarbeiterZuweisen">
+      <modelElement href="Uebung03.uml#_G3IGQFaqEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_G3R3QlaqEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_G3R3Q1aqEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_G3R3RFaqEe2jUdv_GwdGOg" name="m">
+        <modelElement href="Uebung03.uml#_G3IGQVaqEe2jUdv_GwdGOg"/>
+        <cardinality xmi:id="_G3R3RVaqEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+        <type xmi:id="_G3R3RlaqEe2jUdv_GwdGOg" name="Mitarbeiter">
+          <modelElement href="Uebung03.uml#_3RdOYFaoEe2jUdv_GwdGOg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_3N_YwFaqEe2jUdv_GwdGOg" name="mitarbeiterEntfernen">
+      <modelElement href="Uebung03.uml#_3N7uYFaqEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_3N_YwVaqEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_3N_YwlaqEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_3N_Yw1aqEe2jUdv_GwdGOg" name="m">
+        <modelElement href="Uebung03.uml#_3N7uYVaqEe2jUdv_GwdGOg"/>
+        <cardinality xmi:id="_3N_YxFaqEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+        <type xmi:id="_3N_YxVaqEe2jUdv_GwdGOg" name="Mitarbeiter">
+          <modelElement href="Uebung03.uml#_3RdOYFaoEe2jUdv_GwdGOg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_9ZaZMFaqEe2jUdv_GwdGOg" name="main" staticOperation="true">
+      <modelElement href="Uebung03.uml#_9ZWHwFaqEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_9ZaZMlaqEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_9ZaZM1aqEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_9ZaZNFaqEe2jUdv_GwdGOg" name="args">
+        <modelElement href="Uebung03.uml#_9ZWHwVaqEe2jUdv_GwdGOg"/>
+        <cardinality xmi:id="_9ZaZNVaqEe2jUdv_GwdGOg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_9ZaZNlaqEe2jUdv_GwdGOg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SGuVwFarEe2jUdv_GwdGOg" name="Raum">
+      <modelElement href="Uebung03.uml#_SGnBAFarEe2jUdv_GwdGOg"/>
+      <keywords xmi:id="_SGuVwVarEe2jUdv_GwdGOg" keyword="create"/>
+      <visibility xmi:id="_SGuVwlarEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_SGuVw1arEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SGuVxFarEe2jUdv_GwdGOg">
+        <modelElement href="Uebung03.uml#_SGnBAlarEe2jUdv_GwdGOg"/>
+        <type xmi:id="_SGuVxVarEe2jUdv_GwdGOg" name="Raum">
+          <modelElement href="Uebung03.uml#_3RfqoFaoEe2jUdv_GwdGOg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SGu80FarEe2jUdv_GwdGOg" name="nr">
+        <modelElement href="Uebung03.uml#_SGnBAVarEe2jUdv_GwdGOg"/>
+        <cardinality xmi:id="_SGu80VarEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+        <type xmi:id="_SGu80larEe2jUdv_GwdGOg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ViOMQFarEe2jUdv_GwdGOg" sourceConnectionVisual="_ViOzUFarEe2jUdv_GwdGOg" text="@author Jan Zimmer&#xD;&#xA;last modified 28.10.2022" item="_3XI_oFaoEe2jUdv_GwdGOg">
+    <modelElement href="Uebung03.uml#_ViJ60larEe2jUdv_GwdGOg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_LW050FasEe2jUdv_GwdGOg" sourceConnectionVisual="_LW2vAFasEe2jUdv_GwdGOg" text="@author Jan Zimmer&#xD;&#xA;last modified: 28.10.2022" item="_3WuI4FaoEe2jUdv_GwdGOg">
+    <modelElement href="Uebung03.uml#_LUleIFasEe2jUdv_GwdGOg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_3XI_oFaoEe2jUdv_GwdGOg" comments="_ViOMQFarEe2jUdv_GwdGOg" targetConnectionVisual="_ViOzUFarEe2jUdv_GwdGOg" name="Mitarbeiter">
+    <modelElement href="Uebung03.uml#_3RdOYFaoEe2jUdv_GwdGOg"/>
+    <visualProperties xmi:id="_3XI_oVaoEe2jUdv_GwdGOg" position="976.0,301.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_3XI_olaoEe2jUdv_GwdGOg" label="+"/>
+    <attributes xmi:id="_8jz40FaoEe2jUdv_GwdGOg" name="personalNr">
+      <modelElement href="Uebung03.uml#_8jzRwFaoEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_8jz40VaoEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_8jz40laoEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <type xmi:id="_8jz401aoEe2jUdv_GwdGOg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Gjl7sFapEe2jUdv_GwdGOg" name="raum">
+      <modelElement href="Uebung03.uml#_GjjfclapEe2jUdv_GwdGOg"/>
+      <visibility xmi:id="_Gjl7sVapEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_Gjl7slapEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <type xmi:id="_Gjl7s1apEe2jUdv_GwdGOg" name="Raum">
+        <modelElement href="Uebung03.uml#_3RfqoFaoEe2jUdv_GwdGOg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ViM-IFarEe2jUdv_GwdGOg" name="Mitarbeiter">
+      <modelElement href="Uebung03.uml#_ViJTwFarEe2jUdv_GwdGOg"/>
+      <keywords xmi:id="_ViM-IVarEe2jUdv_GwdGOg" keyword="create"/>
+      <visibility xmi:id="_ViM-IlarEe2jUdv_GwdGOg" label="+"/>
+      <cardinality xmi:id="_ViM-I1arEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ViM-JFarEe2jUdv_GwdGOg">
+        <modelElement href="Uebung03.uml#_ViJTwlarEe2jUdv_GwdGOg"/>
+        <type xmi:id="_ViM-JVarEe2jUdv_GwdGOg" name="Mitarbeiter">
+          <modelElement href="Uebung03.uml#_3RdOYFaoEe2jUdv_GwdGOg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_ViM-JlarEe2jUdv_GwdGOg" name="nr">
+        <modelElement href="Uebung03.uml#_ViJTwVarEe2jUdv_GwdGOg"/>
+        <cardinality xmi:id="_ViM-J1arEe2jUdv_GwdGOg" label="1" max="1" min="1"/>
+        <type xmi:id="_ViM-KFarEe2jUdv_GwdGOg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
