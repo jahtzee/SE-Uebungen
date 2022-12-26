@@ -1,0 +1,33 @@
+1. Template method pattern
+
+4. Eigenes Beispiel für Template method pattern:
+
+Eine Website für Rezeptempfehlungen verfügt über eine Suchfunktion, die es den Benutzern ermöglicht, nach Rezepten zu suchen, die auf verschiedenen Kriterien basieren, wie z. B. der Art der Küche, diätetischen Einschränkungen und der Verfügbarkeit von Zutaten. 
+Um diese Funktion zu implementieren, wird das Template Method Muster verwendet, um die Struktur des Rezeptsuchalgorithmus zu definieren und gleichzeitig Unterklassen die Möglichkeit zu geben, 
+die spezifischen Kriterien, die zum Filtern der Rezepte verwendet werden, anzupassen.
+
+Pseudocode:
+
+öffentliche abstrakte Klasse RezeptSuche
+  geschützte Liste von Rezepten rezepte
+  
+  öffentlicher Konstruktor RezeptSuche(Liste von Rezepten rezepte)
+    diese.rezepte = rezepte
+  
+  öffentliche Liste von Rezepten suche()
+    Liste von Rezepten ergebnisse = neue Liste
+    für jedes Rezept in rezepte
+      falls filterKüche(rezept) und filterDiät(rezept) und filterZutaten(rezept)
+        füge rezept zu ergebnisse hinzu
+    gib ergebnisse zurück
+  
+  geschützter abstrakter Wahrheitswert filterKüche(Rezept rezept)
+  geschützter abstrakter Wahrheitswert filterDiät(Rezept rezept)
+  geschützter abstrakter Wahrheitswert filterZutaten(Rezept rezept)
+
+öffentliche Klasse ItalienischeKücheSuche erweitert RezeptSuche
+  öffentlicher Konstruktor ItalienischeKücheSuche(Liste von Rezepten rezepte)
+    ruft Konstruktor von RezeptSuche mit rezepte auf
+  
+  geschützter Wahrheitswert filterKüche(Rezept rezept)
+    gib rezept.getKüche().gleich("Italienisch") zurück

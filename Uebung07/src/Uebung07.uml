@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_qizWMIUmEe2dzenYQV8lyA" name="Uebung07">
+    <eAnnotations xmi:id="_qk5A4IUmEe2dzenYQV8lyA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_qk5A4YUmEe2dzenYQV8lyA" source="codegen">
+        <details xmi:id="_qk5A4oUmEe2dzenYQV8lyA" key="codegenDirectory" value="/Uebung07/src"/>
+        <details xmi:id="_qrf_MIUmEe2dzenYQV8lyA" key="AssociatedSourceCode" value="/Uebung07/src/Building.java;2399495121/1;/Uebung07/src/Employee.java;3858839748/1;/Uebung07/src/UserManager.java;2949812288/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_qqjkA4UmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkBIUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkBYUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkBoUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkB4UmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkCIUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkCYUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_qqjkCoUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_qqkLEIUmEe2dzenYQV8lyA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qqhu0IUmEe2dzenYQV8lyA" name="Building" isAbstract="true">
+      <ownedComment xmi:id="_qq3tGYUmEe2dzenYQV8lyA">
+        <body>@author Jan Zimmer&#xD;
+last modified 26.12.2022&#xD;
+&#xD;
+Building class demonstrating the template method pattern. Constructing a building follows an algorithm comprised of&#xD;
+1) Laying a foundation&#xD;
+2) Erecting pillars&#xD;
+3) Constructing walls&#xD;
+4) Constructing windows&#xD;
+While 1) and 4) are equivalent across all subclasses of Building, the implementation of 2) and 3) may vary.</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e9oUmEe2dzenYQV8lyA" name="constructFoundation" specification="_qqmAQoUmEe2dzenYQV8lyA">
+        <language>java</language>
+        <body>System.out.println(&quot;Laying foundation&quot;);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GAIUmEe2dzenYQV8lyA" name="constructWindows" specification="_qqmAQ4UmEe2dzenYQV8lyA">
+        <language>java</language>
+        <body>System.out.println(&quot;Constructing windows&quot;);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_qqmAQoUmEe2dzenYQV8lyA" name="constructFoundation" isLeaf="true" method="_qq2e9oUmEe2dzenYQV8lyA"/>
+      <ownedOperation xmi:id="_qqmAQ4UmEe2dzenYQV8lyA" name="constructWindows" isLeaf="true" method="_qq3GAIUmEe2dzenYQV8lyA"/>
+      <ownedOperation xmi:id="_qqmARIUmEe2dzenYQV8lyA" name="constructPillars" visibility="protected" isAbstract="true"/>
+      <ownedOperation xmi:id="_qqmARYUmEe2dzenYQV8lyA" name="constructWalls" visibility="protected" isAbstract="true"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qqiV4IUmEe2dzenYQV8lyA" name="GlassBuilding" visibility="package">
+        <eAnnotations xmi:id="_qqiV4YUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqiV4oUmEe2dzenYQV8lyA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_qqzboIUmEe2dzenYQV8lyA" general="_qqhu0IUmEe2dzenYQV8lyA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e8IUmEe2dzenYQV8lyA" name="constructPillars" specification="_qqiV44UmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing a steel beam frame for a glass building&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e8YUmEe2dzenYQV8lyA" name="constructWalls" specification="_qqi88oUmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing glass facade&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_qqiV44UmEe2dzenYQV8lyA" name="constructPillars" visibility="protected" method="_qq2e8IUmEe2dzenYQV8lyA"/>
+        <ownedOperation xmi:id="_qqi88oUmEe2dzenYQV8lyA" name="constructWalls" visibility="protected" method="_qq2e8YUmEe2dzenYQV8lyA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qqkLEYUmEe2dzenYQV8lyA" name="WoodenBuilding" visibility="package">
+        <eAnnotations xmi:id="_qqkLEoUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqkLE4UmEe2dzenYQV8lyA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_qq0CsIUmEe2dzenYQV8lyA" general="_qqhu0IUmEe2dzenYQV8lyA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e8oUmEe2dzenYQV8lyA" name="constructPillars" specification="_qqkLFIUmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing wooden pillars&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e84UmEe2dzenYQV8lyA" name="constructWalls" specification="_qqkyIoUmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing wooden facade&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_qqkLFIUmEe2dzenYQV8lyA" name="constructPillars" visibility="protected" method="_qq2e8oUmEe2dzenYQV8lyA"/>
+        <ownedOperation xmi:id="_qqkyIoUmEe2dzenYQV8lyA" name="constructWalls" visibility="protected" method="_qq2e84UmEe2dzenYQV8lyA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qqlZMIUmEe2dzenYQV8lyA" name="StoneBuilding" visibility="package">
+        <eAnnotations xmi:id="_qqlZMYUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqlZMoUmEe2dzenYQV8lyA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_qq0CsYUmEe2dzenYQV8lyA" general="_qqhu0IUmEe2dzenYQV8lyA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e9IUmEe2dzenYQV8lyA" name="constructPillars" specification="_qqlZM4UmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing concrete pillars for stone building&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq2e9YUmEe2dzenYQV8lyA" name="constructWalls" specification="_qqlZN4UmEe2dzenYQV8lyA">
+          <language>java</language>
+          <body>System.out.println(&quot;Constructing brickwork&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_qqlZM4UmEe2dzenYQV8lyA" name="constructPillars" visibility="protected" method="_qq2e9IUmEe2dzenYQV8lyA"/>
+        <ownedOperation xmi:id="_qqlZN4UmEe2dzenYQV8lyA" name="constructWalls" visibility="protected" method="_qq2e9YUmEe2dzenYQV8lyA"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qqmnUIUmEe2dzenYQV8lyA" name="Employee" isAbstract="true">
+      <ownedComment xmi:id="_qq3tGoUmEe2dzenYQV8lyA">
+        <body>@author Jan Zimmer last modified 26.12.2022&#xD;
+&#xD;
+        Abstract employee class with nested worker and staff subclasses,&#xD;
+        meant to demonstrate the use of the template method pattern.&#xD;
+        Calculating the net salary, taxes and insurance is equivalent across&#xD;
+        subclasses, while calculation of the gross salary depends on the type&#xD;
+        of employee: Workers are payed on an hourly basis while staff is&#xD;
+        payed a fixed salary.</body>
+      </ownedComment>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GDIUmEe2dzenYQV8lyA" name="main" specification="_qqpqoIUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qq3GDYUmEe2dzenYQV8lyA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qq3GDoUmEe2dzenYQV8lyA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>/**&#xD;
+		 * Testcase&#xD;
+		 * &#xD;
+		 * Expected output: &#xD;
+		 * &#xD;
+		 * John's gross salary: &#xD;
+		 * 4000.0 &#xD;
+		 * John's net salary: &#xD;
+		 * 2600.0 &#xD;
+		 * Jane's gross salary: &#xD;
+		 * 2800.0 &#xD;
+		 * Jane's net salary: &#xD;
+		 * 1820.0&#xD;
+		 */&#xD;
+		Worker JohnDoe = new Worker(25, 160);&#xD;
+		Staff JaneDoe = new Staff(2800);&#xD;
+&#xD;
+		System.out.println(&quot;John's gross salary: &quot;);&#xD;
+		System.out.println(JohnDoe.calculateGrossSalary());&#xD;
+		System.out.println(&quot;John's net salary: &quot;);&#xD;
+		System.out.println(JohnDoe.calculateNetSalary());&#xD;
+&#xD;
+		System.out.println(&quot;Jane's gross salary: &quot;);&#xD;
+		System.out.println(JaneDoe.calculateGrossSalary());&#xD;
+		System.out.println(&quot;Jane's net salary: &quot;);&#xD;
+		System.out.println(JaneDoe.calculateNetSalary());&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GD4UmEe2dzenYQV8lyA" name="calculateInsurance" specification="_qqpqpYUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qq3GEIUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>double insurance = 0.15;&#xD;
+		return this.calculateGrossSalary() * insurance;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3tEIUmEe2dzenYQV8lyA" name="calculateTaxes" specification="_qqpqp4UmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qq3tEYUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>double taxes = 0.2;&#xD;
+		return this.calculateGrossSalary() * taxes;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3tEoUmEe2dzenYQV8lyA" name="calculateNetSalary" specification="_qqqRsYUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qq3tE4UmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return this.calculateGrossSalary() - this.calculateTaxes() - this.calculateInsurance();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_qqpqoIUmEe2dzenYQV8lyA" name="main" isStatic="true" method="_qq3GDIUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qqpqoYUmEe2dzenYQV8lyA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqpqooUmEe2dzenYQV8lyA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_qqpqo4UmEe2dzenYQV8lyA" name="calculateGrossSalary" visibility="protected" isAbstract="true">
+        <ownedParameter xmi:id="_qqpqpIUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_qqpqpYUmEe2dzenYQV8lyA" name="calculateInsurance" isLeaf="true" method="_qq3GD4UmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qqpqpoUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_qqpqp4UmEe2dzenYQV8lyA" name="calculateTaxes" isLeaf="true" method="_qq3tEIUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qqqRsIUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_qqqRsYUmEe2dzenYQV8lyA" name="calculateNetSalary" isLeaf="true" method="_qq3tEoUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qqqRsoUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qqnOYIUmEe2dzenYQV8lyA" name="Worker" visibility="package">
+        <eAnnotations xmi:id="_qqnOYYUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqnOYoUmEe2dzenYQV8lyA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_qq0CsoUmEe2dzenYQV8lyA" general="_qqmnUIUmEe2dzenYQV8lyA"/>
+        <ownedAttribute xmi:id="_qq1Q0IUmEe2dzenYQV8lyA" name="hourlyWage" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_qq1Q0oUmEe2dzenYQV8lyA" name="workingHours" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GAYUmEe2dzenYQV8lyA" name="Worker" specification="_qqn1cIUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qq3GAoUmEe2dzenYQV8lyA" name="hourlyWage">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qq3GA4UmEe2dzenYQV8lyA" name="workingHours">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qq3GBIUmEe2dzenYQV8lyA" type="_qqnOYIUmEe2dzenYQV8lyA" direction="return"/>
+          <language>java</language>
+          <body>this.hourlyWage = hourlyWage;&#xD;
+		this.workingHours = workingHours;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GBYUmEe2dzenYQV8lyA" name="calculateGrossSalary" specification="_qqn1doUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qq3GBoUmEe2dzenYQV8lyA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return hourlyWage * workingHours;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_qqn1cIUmEe2dzenYQV8lyA" name="Worker" visibility="package" method="_qq3GAYUmEe2dzenYQV8lyA">
+          <eAnnotations xmi:id="_qqn1c4UmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_qqn1dIUmEe2dzenYQV8lyA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_qqn1cYUmEe2dzenYQV8lyA" name="hourlyWage">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qqn1coUmEe2dzenYQV8lyA" name="workingHours">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qqn1dYUmEe2dzenYQV8lyA" type="_qqnOYIUmEe2dzenYQV8lyA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_qqn1doUmEe2dzenYQV8lyA" name="calculateGrossSalary" visibility="protected" method="_qq3GBYUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qqn1d4UmEe2dzenYQV8lyA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qqocgoUmEe2dzenYQV8lyA" name="Staff" visibility="package">
+        <eAnnotations xmi:id="_qqocg4UmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqochIUmEe2dzenYQV8lyA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_qq0Cs4UmEe2dzenYQV8lyA" general="_qqmnUIUmEe2dzenYQV8lyA"/>
+        <ownedAttribute xmi:id="_qq1Q1IUmEe2dzenYQV8lyA" name="fixedSalary" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GB4UmEe2dzenYQV8lyA" name="Staff" specification="_qqpDkIUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qq3GCIUmEe2dzenYQV8lyA" name="fixedSalary">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qq3GCYUmEe2dzenYQV8lyA" type="_qqocgoUmEe2dzenYQV8lyA" direction="return"/>
+          <language>java</language>
+          <body>this.fixedSalary = fixedSalary;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3GCoUmEe2dzenYQV8lyA" name="calculateGrossSalary" specification="_qqpDlYUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qq3GC4UmEe2dzenYQV8lyA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return fixedSalary;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_qqpDkIUmEe2dzenYQV8lyA" name="Staff" visibility="package" method="_qq3GB4UmEe2dzenYQV8lyA">
+          <eAnnotations xmi:id="_qqpDkoUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_qqpDk4UmEe2dzenYQV8lyA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_qqpDkYUmEe2dzenYQV8lyA" name="fixedSalary">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_qqpDlIUmEe2dzenYQV8lyA" type="_qqocgoUmEe2dzenYQV8lyA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_qqpDlYUmEe2dzenYQV8lyA" name="calculateGrossSalary" visibility="protected" method="_qq3GCoUmEe2dzenYQV8lyA">
+          <ownedParameter xmi:id="_qqpDloUmEe2dzenYQV8lyA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qqq4wIUmEe2dzenYQV8lyA" name="UserManager" visibility="package">
+      <ownedComment xmi:id="_qq3tG4UmEe2dzenYQV8lyA">
+        <body>@author Jan Zimmer last modified 26.12.2022&#xD;
+&#xD;
+        Using a singleton pattern given example (a). The pattern ensures&#xD;
+        there can only ever be one instance of UserManager.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_qq134YUmEe2dzenYQV8lyA" name="instance" isStatic="true" type="_qqq4wIUmEe2dzenYQV8lyA" isReadOnly="true" association="_qq4UIIUmEe2dzenYQV8lyA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qq3tFoUmEe2dzenYQV8lyA" name="isUsernameTaken" specification="_qqrf1YUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qq3tF4UmEe2dzenYQV8lyA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_qq3tGIUmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// TODO: Check whether given username is already taken&#xD;
+		return false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_qqrf0IUmEe2dzenYQV8lyA" name="UserManager" visibility="private">
+        <eAnnotations xmi:id="_qqrf0YUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_qqrf0oUmEe2dzenYQV8lyA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_qqrf1IUmEe2dzenYQV8lyA" type="_qqq4wIUmEe2dzenYQV8lyA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_qqrf1YUmEe2dzenYQV8lyA" name="isUsernameTaken" method="_qq3tFoUmEe2dzenYQV8lyA">
+        <ownedParameter xmi:id="_qqrf1oUmEe2dzenYQV8lyA" name="username">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_qqrf14UmEe2dzenYQV8lyA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qq4UIIUmEe2dzenYQV8lyA" name="" memberEnd="_qq4UIYUmEe2dzenYQV8lyA _qq134YUmEe2dzenYQV8lyA">
+      <ownedEnd xmi:id="_qq4UIYUmEe2dzenYQV8lyA" name="" type="_qqq4wIUmEe2dzenYQV8lyA" association="_qq4UIIUmEe2dzenYQV8lyA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_qk5A44UmEe2dzenYQV8lyA">
+      <eAnnotations xmi:id="_qk5A5IUmEe2dzenYQV8lyA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_qk5n8IUmEe2dzenYQV8lyA" base_Package="_qizWMIUmEe2dzenYQV8lyA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqiV5IUmEe2dzenYQV8lyA" base_Element="_qqiV44UmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqi88IUmEe2dzenYQV8lyA" base_Element="_qqiV44UmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqi88YUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqjkAIUmEe2dzenYQV8lyA" base_Element="_qqi88oUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqjkAYUmEe2dzenYQV8lyA" base_Element="_qqi88oUmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqjkAoUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqkLFYUmEe2dzenYQV8lyA" base_Element="_qqkLFIUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqkyIIUmEe2dzenYQV8lyA" base_Element="_qqkLFIUmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqkyIYUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqkyI4UmEe2dzenYQV8lyA" base_Element="_qqkyIoUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqkyJIUmEe2dzenYQV8lyA" base_Element="_qqkyIoUmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqkyJYUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqlZNIUmEe2dzenYQV8lyA" base_Element="_qqlZM4UmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqlZNYUmEe2dzenYQV8lyA" base_Element="_qqlZM4UmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqlZNoUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqlZOIUmEe2dzenYQV8lyA" base_Element="_qqlZN4UmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqmAQIUmEe2dzenYQV8lyA" base_Element="_qqlZN4UmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqmAQYUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqn1eIUmEe2dzenYQV8lyA" base_Element="_qqn1doUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqocgIUmEe2dzenYQV8lyA" base_Element="_qqn1doUmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqocgYUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqpDl4UmEe2dzenYQV8lyA" base_Element="_qqpDlYUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:Annotations xmi:id="_qqpDmIUmEe2dzenYQV8lyA" base_Element="_qqpDlYUmEe2dzenYQV8lyA">
+    <annotations xmi:id="_qqpDmYUmEe2dzenYQV8lyA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qqrf04UmEe2dzenYQV8lyA" base_Element="_qqrf0IUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qq1Q0YUmEe2dzenYQV8lyA" base_Element="_qq1Q0IUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qq1Q04UmEe2dzenYQV8lyA" base_Element="_qq1Q0oUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qq134IUmEe2dzenYQV8lyA" base_Element="_qq1Q1IUmEe2dzenYQV8lyA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qq134oUmEe2dzenYQV8lyA" base_Element="_qq134YUmEe2dzenYQV8lyA">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_qq1344UmEe2dzenYQV8lyA" name="getInstance" isStatic="true" method="_qq3tFIUmEe2dzenYQV8lyA">
+      <ownedParameter xmi:id="_qq135IUmEe2dzenYQV8lyA" type="_qqq4wIUmEe2dzenYQV8lyA" direction="return"/>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <uml:OpaqueBehavior xmi:id="_qq3tFIUmEe2dzenYQV8lyA" name="getInstance" specification="_qq1344UmEe2dzenYQV8lyA">
+    <ownedParameter xmi:id="_qq3tFYUmEe2dzenYQV8lyA" type="_qqq4wIUmEe2dzenYQV8lyA" direction="return"/>
+    <language>java</language>
+    <body>if (instance == null) {&#xD;
+			instance = new UserManager();&#xD;
+		}&#xD;
+		return instance;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_qq47MIUmEe2dzenYQV8lyA" base_Element="_qq4UIIUmEe2dzenYQV8lyA"/>
+</xmi:XMI>

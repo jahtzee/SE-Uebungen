@@ -1,0 +1,18 @@
+Das Singleton-Muster ist ein Entwurfsmuster, das dafür sorgt, dass eine Klasse nur eine einzige Instanz hat. Es wird verwendet, wenn es wichtig ist, dass es nur eine einzige Instanz einer Klasse gibt, die von allen Teilen einer Anwendung verwendet werden kann.
+
+(a) In einem Webshop können sich beliebig viele Benutzer registrieren. Ein Benutzer wird anhand eines
+Benutzernamen eindeutig identifiziert. Dies bedeutet, dass ein Benutzername nur einmalig vorhanden sein
+kann. 
+
+Je nach Anforderungen an das Programm kann es sinnvoll sein, das Singleton-Pattern zu verwenden, um sicherzustellen, dass es nur eine einzige Instanz einer Benutzerverwaltungs-Klasse geben kann.
+Zum Überprüfen der Eindeutigkeit von Nutzernamen ist das Singleton-Pattern ungeeignet.
+
+(b) Mehrere Programme möchten mit einem externen Drucker interagieren, Ausdrucke senden und
+abbrechen. Dieser Drucker ist physikalisch nur einmal vorhanden.
+
+Auch hier kann es sinnvoll sein, mittels Singleton sicherzustellen, dass die Klasse zur Druckersteuerung nur über eine einzige Instanz verfügt.
+Ob und wie viele Drucker der Controller-Klasse letztendlich zugeordnet werden, ist aber von der Verwendung eines Singleton-Patterns unabhängig.
+
+(c) Ein Programm verwendet ein Logsystem, um automatisch parallele Softwareprozesse zu protokollieren.
+
+Eine Logging-Klasse ist ein klassisches Beispiel für die Verwendung von Singleton-Mustern. Die Verwendung des Patterns ist hier empfehlenswert.
