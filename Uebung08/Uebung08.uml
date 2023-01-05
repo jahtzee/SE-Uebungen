@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_Vs2HcIzbEe2OGa-MKLeAmA" name="Uebung08">
+    <eAnnotations xmi:id="_Vu7yIIzbEe2OGa-MKLeAmA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Vu7yIYzbEe2OGa-MKLeAmA" source="codegen">
+        <details xmi:id="_Vu7yIozbEe2OGa-MKLeAmA" key="codegenDirectory" value="/Uebung08/src"/>
+        <details xmi:id="_V0yigIzbEe2OGa-MKLeAmA" key="AssociatedSourceCode" value="/Uebung08/src/Device.java;3402777611/1;/Uebung08/src/DeviceHandler.java;4024547145/1;/Uebung08/src/Printer.java;1872143420/1;/Uebung08/src/PrinterHandler.java;803695876/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_V0Q-EIzbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-EYzbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-EozbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-E4zbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-FIzbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-FYzbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-FozbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-F4zbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_V0Q-GIzbEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Vz81AIzbEe2OGa-MKLeAmA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Vz9cEIzbEe2OGa-MKLeAmA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_V0YS0IzbEe2OGa-MKLeAmA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_V0YS0ozbEe2OGa-MKLeAmA" name="List"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V0QXAIzbEe2OGa-MKLeAmA" name="Device" isAbstract="true">
+      <ownedComment xmi:id="_HFyFgIzdEe2OGa-MKLeAmA">
+        <body>@author Jan Zimmer&#xD;
+last modified 05.01.2023&#xD;
+&#xD;
+Abstract device stub</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V0QXAYzbEe2OGa-MKLeAmA" name="DeviceHandler" isAbstract="true">
+      <ownedComment xmi:id="_HFyFgYzdEe2OGa-MKLeAmA">
+        <body>@author Jan Zimmer&#xD;
+last modified 05.01.2023&#xD;
+&#xD;
+Abstract DeviceHandler class using a createDevice() factory method.&#xD;
+Which kind of devices we're managing is decided at runtime by implementations of our framework classes DeviceHandler and Device.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_V0Zg8ozbEe2OGa-MKLeAmA" name="deviceList" visibility="private" isLeaf="true" type="_V0QXAIzbEe2OGa-MKLeAmA" isOrdered="true" isReadOnly="true" association="_V0avGozbEe2OGa-MKLeAmA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0Zg84zbEe2OGa-MKLeAmA" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_V0Zg9IzbEe2OGa-MKLeAmA" value="new ArrayList&lt;>()"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_V0aIA4zbEe2OGa-MKLeAmA" name="getList" specification="_V0RlIIzbEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_V0aIBIzbEe2OGa-MKLeAmA" type="_V0QXAIzbEe2OGa-MKLeAmA" isOrdered="true" direction="return">
+          <name xsi:nil="true"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0aIBYzbEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return this.deviceList;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wnKjYozcEe2OGa-MKLeAmA" name="registerNewDevice" specification="_wnKjYIzcEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_wnKjY4zcEe2OGa-MKLeAmA" name="deviceId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>deviceList.add(createDevice(deviceId));&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_V0RlIIzbEe2OGa-MKLeAmA" name="getList" method="_V0aIA4zbEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_V0RlIYzbEe2OGa-MKLeAmA" type="_V0QXAIzbEe2OGa-MKLeAmA" isOrdered="true" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0RlIozbEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_wnKjYIzcEe2OGa-MKLeAmA" name="registerNewDevice" method="_wnKjYozcEe2OGa-MKLeAmA">
+        <ownedComment xmi:id="_HFyFgozdEe2OGa-MKLeAmA">
+          <body>Invokes the abstract factory method to create the new device list entry.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_wnKjYYzcEe2OGa-MKLeAmA" name="deviceId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xs2ZEIzcEe2OGa-MKLeAmA" name="createDevice" visibility="protected" isAbstract="true">
+        <ownedParameter xmi:id="_xs3AIIzcEe2OGa-MKLeAmA" name="deviceId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_xs3AIYzcEe2OGa-MKLeAmA" type="_V0QXAIzbEe2OGa-MKLeAmA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V0SMMIzbEe2OGa-MKLeAmA" name="Printer">
+      <ownedComment xmi:id="_HFyFg4zdEe2OGa-MKLeAmA">
+        <body>@author Jan Zimmer&#xD;
+last modified 05.01.2023</body>
+      </ownedComment>
+      <generalization xmi:id="_V0Y54ozbEe2OGa-MKLeAmA" general="_V0QXAIzbEe2OGa-MKLeAmA"/>
+      <ownedAttribute xmi:id="__NkzIIzcEe2OGa-MKLeAmA" name="printerId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_V0aIBozbEe2OGa-MKLeAmA" name="Printer" specification="_V0SMMYzbEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_V0aIB4zbEe2OGa-MKLeAmA" name="printerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_V0aICIzbEe2OGa-MKLeAmA" type="_V0SMMIzbEe2OGa-MKLeAmA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.printerId = printerId;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_V0SMMYzbEe2OGa-MKLeAmA" name="Printer" method="_V0aIBozbEe2OGa-MKLeAmA">
+        <eAnnotations xmi:id="_V0SMM4zbEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_V0SMNIzbEe2OGa-MKLeAmA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_V0SMMozbEe2OGa-MKLeAmA" name="printerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_V0SMNYzbEe2OGa-MKLeAmA" type="_V0SMMIzbEe2OGa-MKLeAmA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_V0SzQIzbEe2OGa-MKLeAmA" name="PrinterHandler">
+      <ownedComment xmi:id="_HFyFhIzdEe2OGa-MKLeAmA">
+        <body>@author Jan Zimmer&#xD;
+last modified 05.01.2023</body>
+      </ownedComment>
+      <generalization xmi:id="_V0Zg8YzbEe2OGa-MKLeAmA" general="_V0QXAYzbEe2OGa-MKLeAmA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_V0avEIzbEe2OGa-MKLeAmA" name="main" specification="_V0SzQYzbEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_V0avEYzbEe2OGa-MKLeAmA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0avEozbEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>System.out.println(&quot;Drucker:&quot;);&#xD;
+		PrinterHandler printerHandler = new PrinterHandler();&#xD;
+		printerHandler.registerNewDevice(&quot;printer0001&quot;);&#xD;
+		for (Device d : printerHandler.getList()) {&#xD;
+			Printer p = (Printer) d;&#xD;
+			System.out.println(p.printerId);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ztxH8IzcEe2OGa-MKLeAmA" name="createDevice" specification="_ztwg4IzcEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_ztxH8YzcEe2OGa-MKLeAmA" name="printerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ztxH8ozcEe2OGa-MKLeAmA" type="_V0QXAIzbEe2OGa-MKLeAmA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return new Printer(printerId);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_V0SzQYzbEe2OGa-MKLeAmA" name="main" isStatic="true" method="_V0avEIzbEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_V0SzQozbEe2OGa-MKLeAmA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0TaUIzbEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ztwg4IzcEe2OGa-MKLeAmA" name="createDevice" visibility="protected" method="_ztxH8IzcEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_ztwg4YzcEe2OGa-MKLeAmA" name="printerId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_ztwg4ozcEe2OGa-MKLeAmA" type="_V0QXAIzbEe2OGa-MKLeAmA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_V0avGozbEe2OGa-MKLeAmA" name="" memberEnd="_V0avG4zbEe2OGa-MKLeAmA _V0Zg8ozbEe2OGa-MKLeAmA">
+      <ownedEnd xmi:id="_V0avG4zbEe2OGa-MKLeAmA" name="" type="_V0QXAYzbEe2OGa-MKLeAmA" association="_V0avGozbEe2OGa-MKLeAmA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_Vu7yI4zbEe2OGa-MKLeAmA">
+      <eAnnotations xmi:id="_Vu7yJIzbEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Vu8ZMIzbEe2OGa-MKLeAmA" base_Package="_Vs2HcIzbEe2OGa-MKLeAmA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_V0YS0YzbEe2OGa-MKLeAmA" base_Element="_V0YS0IzbEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:Reference xmi:id="_V0Y54IzbEe2OGa-MKLeAmA" base_Element="_V0YS0ozbEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_V0Zg9YzbEe2OGa-MKLeAmA" base_Element="_V0Zg8ozbEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:Reference xmi:id="_V0bWIIzbEe2OGa-MKLeAmA" base_Element="_V0avGozbEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xs3AIozcEe2OGa-MKLeAmA" base_Element="_xs2ZEIzcEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ztwg44zcEe2OGa-MKLeAmA" base_Element="_ztwg4IzcEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:Annotations xmi:id="_ztwg5IzcEe2OGa-MKLeAmA" base_Element="_ztwg4IzcEe2OGa-MKLeAmA">
+    <annotations xmi:id="_ztwg5YzcEe2OGa-MKLeAmA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="__NkzIYzcEe2OGa-MKLeAmA" base_Element="__NkzIIzcEe2OGa-MKLeAmA"/>
+</xmi:XMI>

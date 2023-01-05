@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_cDP2kIzgEe2OGa-MKLeAmA" name="Uebung08_Flooring">
+    <eAnnotations xmi:id="_cFpqUIzgEe2OGa-MKLeAmA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_cFpqUYzgEe2OGa-MKLeAmA" source="codegen">
+        <details xmi:id="_cFpqUozgEe2OGa-MKLeAmA" key="codegenDirectory" value="/Uebung08/src"/>
+        <details xmi:id="_eD3qgIzgEe2OGa-MKLeAmA" key="AssociatedSourceCode" value="/Uebung08/src/Flooring.java;2536868705/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_cLoWhIzgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWhYzgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWhozgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWh4zgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWiIzgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWiYzgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWiozgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_cLoWi4zgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_cLo9kIzgEe2OGa-MKLeAmA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cLoWgIzgEe2OGa-MKLeAmA" name="Flooring" isAbstract="true">
+      <ownedComment xmi:id="__RmasIzgEe2OGa-MKLeAmA">
+        <body>@author Jan Zimmer&#xD;
+last modified 05.01.2023&#xD;
+&#xD;
+Price calculation using a template method, since we're establishing a common algorithm (price calculation) which will be modified in part by subclasses.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_cLvEMIzgEe2OGa-MKLeAmA" name="baseratePrice" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cLvEMozgEe2OGa-MKLeAmA" name="surfaceArea" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nLLNQIzgEe2OGa-MKLeAmA" name="pricePerSquareMeter" visibility="protected" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrSYzgEe2OGa-MKLeAmA" name="main" specification="_cLqLvIzgEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_cLvrSozgEe2OGa-MKLeAmA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLvrS4zgEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>Tiling tilingPricing = new Tiling(5,10,7);&#xD;
+		Parquet parquetPricing = new Parquet(8, 10, 0.5);&#xD;
+		System.out.println(&quot;Tiling: &quot;+tilingPricing.calculatePrice()); //75.0&#xD;
+		System.out.println(&quot;Parquet: &quot;+parquetPricing.calculatePrice()); //48.0&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrTIzgEe2OGa-MKLeAmA" name="Flooring" specification="_cLqywYzgEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_cLvrTYzgEe2OGa-MKLeAmA" name="baseRatePrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_cLvrTozgEe2OGa-MKLeAmA" name="surfaceArea">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_cLvrT4zgEe2OGa-MKLeAmA" type="_cLoWgIzgEe2OGa-MKLeAmA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>this.baseratePrice = baseRatePrice;&#xD;
+		this.surfaceArea = surfaceArea;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrUIzgEe2OGa-MKLeAmA" name="calculatePrice" specification="_cLqyx4zgEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_cLvrUYzgEe2OGa-MKLeAmA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return baseratePrice + surfaceArea * getPricePerSquareMeter();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_cLqLvIzgEe2OGa-MKLeAmA" name="main" isStatic="true" method="_cLvrSYzgEe2OGa-MKLeAmA">
+        <ownedParameter xmi:id="_cLqLvYzgEe2OGa-MKLeAmA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLqywIzgEe2OGa-MKLeAmA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_cLqywYzgEe2OGa-MKLeAmA" name="Flooring" method="_cLvrTIzgEe2OGa-MKLeAmA">
+        <eAnnotations xmi:id="_cLqyxIzgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_cLqyxYzgEe2OGa-MKLeAmA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_cLqywozgEe2OGa-MKLeAmA" name="baseRatePrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_cLqyw4zgEe2OGa-MKLeAmA" name="surfaceArea">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_cLqyxozgEe2OGa-MKLeAmA" type="_cLoWgIzgEe2OGa-MKLeAmA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_cLqyx4zgEe2OGa-MKLeAmA" name="calculatePrice" method="_cLvrUIzgEe2OGa-MKLeAmA">
+        <ownedComment xmi:id="__RmasYzgEe2OGa-MKLeAmA">
+          <body>This is a algorithm common to all types of flooring for calculating their price. Price per m² differs between different types of flooring and is calculated using its own algorithm,&#xD;
+	 * which is why calculation of this field is delegated to subclasses of Flooring.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_cLqyyIzgEe2OGa-MKLeAmA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ptYEQIzgEe2OGa-MKLeAmA" name="getPricePerSquareMeter" isAbstract="true">
+        <ownedParameter xmi:id="_ptYrUIzgEe2OGa-MKLeAmA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedParameter>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_cLoWgYzgEe2OGa-MKLeAmA" name="Tiling" visibility="package">
+        <eAnnotations xmi:id="_cLoWgozgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_cLoWg4zgEe2OGa-MKLeAmA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_cLt2EIzgEe2OGa-MKLeAmA" general="_cLoWgIzgEe2OGa-MKLeAmA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvENIzgEe2OGa-MKLeAmA" name="Tiling" specification="_cLo9kYzgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLvENYzgEe2OGa-MKLeAmA" name="baseRatePrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvENozgEe2OGa-MKLeAmA" name="surfaceArea">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvEN4zgEe2OGa-MKLeAmA" name="fixedPricePerSquareMeter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvEOIzgEe2OGa-MKLeAmA" type="_cLoWgYzgEe2OGa-MKLeAmA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(baseRatePrice, surfaceArea);&#xD;
+		this.pricePerSquareMeter = fixedPricePerSquareMeter;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrQIzgEe2OGa-MKLeAmA" name="getPricePerSquareMeter" specification="_cLo9mIzgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLvrQYzgEe2OGa-MKLeAmA" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return pricePerSquareMeter;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_cLo9kYzgEe2OGa-MKLeAmA" name="Tiling" method="_cLvENIzgEe2OGa-MKLeAmA">
+          <eAnnotations xmi:id="_cLo9lYzgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_cLo9lozgEe2OGa-MKLeAmA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_cLo9kozgEe2OGa-MKLeAmA" name="baseRatePrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLo9k4zgEe2OGa-MKLeAmA" name="surfaceArea">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLo9lIzgEe2OGa-MKLeAmA" name="fixedPricePerSquareMeter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLo9l4zgEe2OGa-MKLeAmA" type="_cLoWgYzgEe2OGa-MKLeAmA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_cLo9mIzgEe2OGa-MKLeAmA" name="getPricePerSquareMeter" method="_cLvrQIzgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLpkoIzgEe2OGa-MKLeAmA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_cLpkpIzgEe2OGa-MKLeAmA" name="Parquet" visibility="package">
+        <eAnnotations xmi:id="_cLpkpYzgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_cLpkpozgEe2OGa-MKLeAmA" key="sameFile"/>
+        </eAnnotations>
+        <generalization xmi:id="_cLt2EYzgEe2OGa-MKLeAmA" general="_cLoWgIzgEe2OGa-MKLeAmA"/>
+        <ownedAttribute xmi:id="_cLudJIzgEe2OGa-MKLeAmA" name="thickness" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrQozgEe2OGa-MKLeAmA" name="Parquet" specification="_cLqLsIzgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLvrQ4zgEe2OGa-MKLeAmA" name="baseRatePrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvrRIzgEe2OGa-MKLeAmA" name="surfaceArea">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvrRYzgEe2OGa-MKLeAmA" name="thickness">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLvrRozgEe2OGa-MKLeAmA" type="_cLpkpIzgEe2OGa-MKLeAmA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(baseRatePrice, surfaceArea);&#xD;
+		this.thickness = thickness;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cLvrR4zgEe2OGa-MKLeAmA" name="getPricePerSquareMeter" specification="_cLqLt4zgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLvrSIzgEe2OGa-MKLeAmA" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return baseratePrice * thickness;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_cLqLsIzgEe2OGa-MKLeAmA" name="Parquet" method="_cLvrQozgEe2OGa-MKLeAmA">
+          <eAnnotations xmi:id="_cLqLtIzgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_cLqLtYzgEe2OGa-MKLeAmA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_cLqLsYzgEe2OGa-MKLeAmA" name="baseRatePrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLqLsozgEe2OGa-MKLeAmA" name="surfaceArea">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLqLs4zgEe2OGa-MKLeAmA" name="thickness">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_cLqLtozgEe2OGa-MKLeAmA" type="_cLpkpIzgEe2OGa-MKLeAmA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_cLqLt4zgEe2OGa-MKLeAmA" name="getPricePerSquareMeter" method="_cLvrR4zgEe2OGa-MKLeAmA">
+          <ownedParameter xmi:id="_cLqLuIzgEe2OGa-MKLeAmA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </nestedClassifier>
+    </packagedElement>
+    <profileApplication xmi:id="_cFqRYIzgEe2OGa-MKLeAmA">
+      <eAnnotations xmi:id="_cFqRYYzgEe2OGa-MKLeAmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_cFqRYozgEe2OGa-MKLeAmA" base_Package="_cDP2kIzgEe2OGa-MKLeAmA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLpkoYzgEe2OGa-MKLeAmA" base_Element="_cLo9mIzgEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:Annotations xmi:id="_cLpkoozgEe2OGa-MKLeAmA" base_Element="_cLo9mIzgEe2OGa-MKLeAmA">
+    <annotations xmi:id="_cLpko4zgEe2OGa-MKLeAmA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLqLuYzgEe2OGa-MKLeAmA" base_Element="_cLqLt4zgEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:Annotations xmi:id="_cLqLuozgEe2OGa-MKLeAmA" base_Element="_cLqLt4zgEe2OGa-MKLeAmA">
+    <annotations xmi:id="_cLqLu4zgEe2OGa-MKLeAmA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLudJYzgEe2OGa-MKLeAmA" base_Element="_cLudJIzgEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLvEMYzgEe2OGa-MKLeAmA" base_Element="_cLvEMIzgEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLvEM4zgEe2OGa-MKLeAmA" base_Element="_cLvEMozgEe2OGa-MKLeAmA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_nLLNQYzgEe2OGa-MKLeAmA" base_Element="_nLLNQIzgEe2OGa-MKLeAmA"/>
+</xmi:XMI>

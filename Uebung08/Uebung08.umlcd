@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_VtSzYIzbEe2OGa-MKLeAmA">
+  <modelElement href="Uebung08.uml#_Vs2HcIzbEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_V04CEozbEe2OGa-MKLeAmA" sourceAnchor="161.0,0.0" targetAnchor="31.0,27.0" superClass="_V04pIIzbEe2OGa-MKLeAmA" subClass="_V01l0IzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0Y54ozbEe2OGa-MKLeAmA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_V1K9AIzbEe2OGa-MKLeAmA" sourceAnchor="273.0,43.0" targetAnchor="0.0,15.0" target="_V04pIIzbEe2OGa-MKLeAmA" source="_V1MyMIzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0avGozbEe2OGa-MKLeAmA"/>
+    <stereotypes xmi:id="_V1LkFozbEe2OGa-MKLeAmA" name="Reference">
+      <modelElement href="Uebung08.uml#_V0bWIIzbEe2OGa-MKLeAmA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_V1LkE4zbEe2OGa-MKLeAmA" text="">
+      <visualProperties xmi:id="_V9X2wIzbEe2OGa-MKLeAmA" position="-18.5,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_V1LkFIzbEe2OGa-MKLeAmA" aggregationKind="NONE" name="">
+      <modelElement href="Uebung08.uml#_V0avG4zbEe2OGa-MKLeAmA"/>
+      <visualProperties xmi:id="_V9XPsYzbEe2OGa-MKLeAmA" position="13.785714285714278,-47.0"/>
+      <visibility xmi:id="_V1MLIYzbEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_V1MLIIzbEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_V1LkFYzbEe2OGa-MKLeAmA" aggregationKind="NONE" name="deviceList" navigable="true">
+      <modelElement href="Uebung08.uml#_V0Zg8ozbEe2OGa-MKLeAmA"/>
+      <visualProperties xmi:id="_V9X2wYzbEe2OGa-MKLeAmA" position="-110.33333333333337,-47.0"/>
+      <visibility xmi:id="_V1MLI4zbEe2OGa-MKLeAmA" label="-"/>
+      <cardinality xmi:id="_V1MLIozbEe2OGa-MKLeAmA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_V1LkEozbEe2OGa-MKLeAmA" sourceAnchor="101.0,0.0" targetAnchor="93.0,92.0" superClass="_V1MyMIzbEe2OGa-MKLeAmA" subClass="_V1JH0IzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0Zg8YzbEe2OGa-MKLeAmA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HF2-AIzdEe2OGa-MKLeAmA" targetItem="_V04pIIzbEe2OGa-MKLeAmA" sourceItem="_HF2W8IzdEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HF6oYIzdEe2OGa-MKLeAmA" targetItem="_V1MyMIzbEe2OGa-MKLeAmA" sourceItem="_HF6BUIzdEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HF-SwIzdEe2OGa-MKLeAmA" targetItem="_wnPb4YzcEe2OGa-MKLeAmA" sourceItem="_HF9rsIzdEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HGEZYIzdEe2OGa-MKLeAmA" targetItem="_V01l0IzbEe2OGa-MKLeAmA" sourceItem="_HGDyUIzdEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HGIq0IzdEe2OGa-MKLeAmA" targetItem="_V1JH0IzbEe2OGa-MKLeAmA" sourceItem="_HGIDwIzdEe2OGa-MKLeAmA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_V1JH0IzbEe2OGa-MKLeAmA" comments="_HGIDwIzdEe2OGa-MKLeAmA" targetConnectionVisual="_HGIq0IzdEe2OGa-MKLeAmA" name="PrinterHandler" generalizations="_V1LkEozbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0SzQIzbEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_V1JH0YzbEe2OGa-MKLeAmA" position="-165.0,526.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_V1JH0ozbEe2OGa-MKLeAmA" label="+"/>
+    <operations xmi:id="_V1JH04zbEe2OGa-MKLeAmA" name="main" staticOperation="true">
+      <modelElement href="Uebung08.uml#_V0SzQYzbEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_V1JH1IzbEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_V1JH1YzbEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_V1JH1ozbEe2OGa-MKLeAmA" name="args">
+        <modelElement href="Uebung08.uml#_V0SzQozbEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_V1JH14zbEe2OGa-MKLeAmA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_V1JH2IzbEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_zt1ZYIzcEe2OGa-MKLeAmA" name="createDevice">
+      <modelElement href="Uebung08.uml#_ztwg4IzcEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_zt1ZYYzcEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08.uml#_ztwg44zcEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_zt1ZYozcEe2OGa-MKLeAmA" name="Annotations">
+        <modelElement href="Uebung08.uml#_ztwg5IzcEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_zt1ZY4zcEe2OGa-MKLeAmA" label="#"/>
+      <cardinality xmi:id="_zt1ZZIzcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_zt1ZZYzcEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08.uml#_ztwg4ozcEe2OGa-MKLeAmA"/>
+        <type xmi:id="_zt1ZZozcEe2OGa-MKLeAmA" name="Device">
+          <modelElement href="Uebung08.uml#_V0QXAIzbEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_zt1ZZ4zcEe2OGa-MKLeAmA" name="printerId">
+        <modelElement href="Uebung08.uml#_ztwg4YzcEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_zt1ZaIzcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_zt1ZaYzcEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_V1MyMIzbEe2OGa-MKLeAmA" comments="_HF6BUIzdEe2OGa-MKLeAmA" targetConnectionVisual="_HF6oYIzdEe2OGa-MKLeAmA" name="DeviceHandler" abstractClass="true" associationsOut="_V1K9AIzbEe2OGa-MKLeAmA" subclassedBy="_V1LkEozbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0QXAYzbEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_V1MyMYzbEe2OGa-MKLeAmA" position="-157.0,320.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_V1MyMozbEe2OGa-MKLeAmA" label="+"/>
+    <attributes xmi:id="_V1MyM4zbEe2OGa-MKLeAmA" defaultValue="new ArrayList&lt;>()" name="deviceList">
+      <modelElement href="Uebung08.uml#_V0Zg8ozbEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_V1MyNIzbEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08.uml#_V0Zg9YzbEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_V1MyNYzbEe2OGa-MKLeAmA" label="-"/>
+      <cardinality xmi:id="_V1MyNozbEe2OGa-MKLeAmA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_V1MyN4zbEe2OGa-MKLeAmA" name="Device">
+        <modelElement href="Uebung08.uml#_V0QXAIzbEe2OGa-MKLeAmA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_V1MyQYzbEe2OGa-MKLeAmA" name="getList">
+      <modelElement href="Uebung08.uml#_V0RlIIzbEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_V1MyQozbEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_V1MyQ4zbEe2OGa-MKLeAmA" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_V1MyRIzbEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08.uml#_V0RlIYzbEe2OGa-MKLeAmA"/>
+        <type xmi:id="_V1MyRYzbEe2OGa-MKLeAmA" name="Device">
+          <modelElement href="Uebung08.uml#_V0QXAIzbEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_wnPb4YzcEe2OGa-MKLeAmA" comments="_HF9rsIzdEe2OGa-MKLeAmA" targetConnectionVisual="_HF-SwIzdEe2OGa-MKLeAmA" name="registerNewDevice">
+      <modelElement href="Uebung08.uml#_wnKjYIzcEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_wnPb4ozcEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_wnPb44zcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_wnPb5IzcEe2OGa-MKLeAmA" name="deviceId">
+        <modelElement href="Uebung08.uml#_wnKjYYzcEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_wnPb5YzcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_wnPb5ozcEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_xs8fsIzcEe2OGa-MKLeAmA" abstractOperation="true" name="createDevice">
+      <modelElement href="Uebung08.uml#_xs2ZEIzcEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_xs8fsYzcEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08.uml#_xs3AIozcEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_xs8fsozcEe2OGa-MKLeAmA" label="#"/>
+      <cardinality xmi:id="_xs8fs4zcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_xs8ftIzcEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08.uml#_xs3AIYzcEe2OGa-MKLeAmA"/>
+        <type xmi:id="_xs8ftYzcEe2OGa-MKLeAmA" name="Device">
+          <modelElement href="Uebung08.uml#_V0QXAIzbEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_xs8ftozcEe2OGa-MKLeAmA" name="deviceId">
+        <modelElement href="Uebung08.uml#_xs3AIIzcEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_xs8ft4zcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_xs8fuIzcEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HF2W8IzdEe2OGa-MKLeAmA" sourceConnectionVisual="_HF2-AIzdEe2OGa-MKLeAmA" text="@author Jan Zimmer&#xD;&#xA;last modified 05.01.2023&#xD;&#xA;&#xD;&#xA;Abstract device stub" item="_V04pIIzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_HFyFgIzdEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HF6BUIzdEe2OGa-MKLeAmA" sourceConnectionVisual="_HF6oYIzdEe2OGa-MKLeAmA" text="@author Jan Zimmer&#xD;&#xA;last modified 05.01.2023&#xD;&#xA;&#xD;&#xA;Abstract DeviceHandler class using a createDevice() factory method.&#xD;&#xA;Which kind of devices we're managing is decided at runtime by implementations of our framework classes DeviceHandler and Device." item="_V1MyMIzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_HFyFgYzdEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HF9rsIzdEe2OGa-MKLeAmA" sourceConnectionVisual="_HF-SwIzdEe2OGa-MKLeAmA" text="Invokes the abstract factory method to create the new device list entry." item="_wnPb4YzcEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_HFyFgozdEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HGDyUIzdEe2OGa-MKLeAmA" sourceConnectionVisual="_HGEZYIzdEe2OGa-MKLeAmA" text="@author Jan Zimmer&#xD;&#xA;last modified 05.01.2023" item="_V01l0IzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_HFyFg4zdEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HGIDwIzdEe2OGa-MKLeAmA" sourceConnectionVisual="_HGIq0IzdEe2OGa-MKLeAmA" text="@author Jan Zimmer&#xD;&#xA;last modified 05.01.2023" item="_V1JH0IzbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_HFyFhIzdEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_V01l0IzbEe2OGa-MKLeAmA" comments="_HGDyUIzdEe2OGa-MKLeAmA" targetConnectionVisual="_HGEZYIzdEe2OGa-MKLeAmA" name="Printer" generalizations="_V04CEozbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0SMMIzbEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_V01l0YzbEe2OGa-MKLeAmA" position="182.0,515.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_V01l0ozbEe2OGa-MKLeAmA" label="+"/>
+    <attributes xmi:id="__OFJcIzcEe2OGa-MKLeAmA" name="printerId">
+      <modelElement href="Uebung08.uml#__NkzIIzcEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="__OFJcYzcEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08.uml#__NkzIYzcEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="__OFJcozcEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="__OFJc4zcEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <type xmi:id="__OFJdIzcEe2OGa-MKLeAmA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_V01l2IzbEe2OGa-MKLeAmA" name="Printer">
+      <modelElement href="Uebung08.uml#_V0SMMYzbEe2OGa-MKLeAmA"/>
+      <keywords xmi:id="_V01l2YzbEe2OGa-MKLeAmA" keyword="create"/>
+      <visibility xmi:id="_V01l2ozbEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_V01l24zbEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_V01l3IzbEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08.uml#_V0SMNYzbEe2OGa-MKLeAmA"/>
+        <type xmi:id="_V01l3YzbEe2OGa-MKLeAmA" name="Printer">
+          <modelElement href="Uebung08.uml#_V0SMMIzbEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_V01l3ozbEe2OGa-MKLeAmA" name="printerId">
+        <modelElement href="Uebung08.uml#_V0SMMozbEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_V01l34zbEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_V01l4IzbEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_V04pIIzbEe2OGa-MKLeAmA" comments="_HF2W8IzdEe2OGa-MKLeAmA" targetConnectionVisual="_HF2-AIzdEe2OGa-MKLeAmA" name="Device" abstractClass="true" associationsIn="_V1K9AIzbEe2OGa-MKLeAmA" subclassedBy="_V04CEozbEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08.uml#_V0QXAIzbEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_V04pIYzbEe2OGa-MKLeAmA" position="312.0,348.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_V04pIozbEe2OGa-MKLeAmA" label="+"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

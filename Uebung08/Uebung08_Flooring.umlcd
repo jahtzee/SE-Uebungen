@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_cD7MAIzgEe2OGa-MKLeAmA">
+  <modelElement href="Uebung08_Flooring.uml#_cDP2kIzgEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_eFEkYIzgEe2OGa-MKLeAmA" sourceAnchor="570.0,45.0" targetAnchor="0.0,78.0" superClass="_eE7acIzgEe2OGa-MKLeAmA" subClass="_eFFLcIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#_cLt2EIzgEe2OGa-MKLeAmA"/>
+    <bendpoints xmi:id="_eG-B0IzgEe2OGa-MKLeAmA" sourceX="25" targetX="-25" targetY="178"/>
+    <bendpoints xmi:id="_eG-B0YzgEe2OGa-MKLeAmA" sourceX="25" sourceY="-178" targetX="-25"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_eFGZkIzgEe2OGa-MKLeAmA" sourceAnchor="507.0,58.0" targetAnchor="0.0,78.0" superClass="_eE7acIzgEe2OGa-MKLeAmA" subClass="_eFHnsIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#_cLt2EYzgEe2OGa-MKLeAmA"/>
+    <bendpoints xmi:id="_eG-B0ozgEe2OGa-MKLeAmA" sourceX="57" targetX="-25" targetY="341"/>
+    <bendpoints xmi:id="_eG-B04zgEe2OGa-MKLeAmA" sourceX="57" sourceY="-341" targetX="-25"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__RtvcIzgEe2OGa-MKLeAmA" targetItem="_eE7acIzgEe2OGa-MKLeAmA" sourceItem="__Rr6QIzgEe2OGa-MKLeAmA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="__RwLsIzgEe2OGa-MKLeAmA" targetItem="_eE7alIzgEe2OGa-MKLeAmA" sourceItem="__Ru9kIzgEe2OGa-MKLeAmA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_eE7acIzgEe2OGa-MKLeAmA" comments="__Rr6QIzgEe2OGa-MKLeAmA" targetConnectionVisual="__RtvcIzgEe2OGa-MKLeAmA" name="Flooring" abstractClass="true" subclassedBy="_eFEkYIzgEe2OGa-MKLeAmA _eFGZkIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#_cLoWgIzgEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_eE7acYzgEe2OGa-MKLeAmA" position="844.0,218.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_eE7acozgEe2OGa-MKLeAmA" label="+"/>
+    <attributes xmi:id="_eE7ac4zgEe2OGa-MKLeAmA" name="baseratePrice">
+      <modelElement href="Uebung08_Flooring.uml#_cLvEMIzgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_eE7adIzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_cLvEMYzgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_eE7adYzgEe2OGa-MKLeAmA" label="#"/>
+      <cardinality xmi:id="_eE7adozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <type xmi:id="_eE7ad4zgEe2OGa-MKLeAmA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_eE7aeIzgEe2OGa-MKLeAmA" name="surfaceArea">
+      <modelElement href="Uebung08_Flooring.uml#_cLvEMozgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_eE7aeYzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_cLvEM4zgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_eE7aeozgEe2OGa-MKLeAmA" label="#"/>
+      <cardinality xmi:id="_eE7ae4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <type xmi:id="_eE7afIzgEe2OGa-MKLeAmA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_nLRT4IzgEe2OGa-MKLeAmA" name="pricePerSquareMeter">
+      <modelElement href="Uebung08_Flooring.uml#_nLLNQIzgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_nLRT4YzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_nLLNQYzgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_nLRT4ozgEe2OGa-MKLeAmA" label="#"/>
+      <cardinality xmi:id="_nLRT44zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <type xmi:id="_nLRT5IzgEe2OGa-MKLeAmA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_eE7agozgEe2OGa-MKLeAmA" name="main" staticOperation="true">
+      <modelElement href="Uebung08_Flooring.uml#_cLqLvIzgEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_eE7ag4zgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eE7ahIzgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_eE7ahYzgEe2OGa-MKLeAmA" name="args">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLvYzgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eE7ahozgEe2OGa-MKLeAmA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_eE7ah4zgEe2OGa-MKLeAmA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_eE7aiIzgEe2OGa-MKLeAmA" name="Flooring">
+      <modelElement href="Uebung08_Flooring.uml#_cLqywYzgEe2OGa-MKLeAmA"/>
+      <keywords xmi:id="_eE7aiYzgEe2OGa-MKLeAmA" keyword="create"/>
+      <visibility xmi:id="_eE7aiozgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eE7ai4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eE7ajIzgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLqyxozgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eE7ajYzgEe2OGa-MKLeAmA" name="Flooring">
+          <modelElement href="Uebung08_Flooring.uml#_cLoWgIzgEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_eE7ajozgEe2OGa-MKLeAmA" name="baseRatePrice">
+        <modelElement href="Uebung08_Flooring.uml#_cLqywozgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eE7aj4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eE7akIzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_eE7akYzgEe2OGa-MKLeAmA" name="surfaceArea">
+        <modelElement href="Uebung08_Flooring.uml#_cLqyw4zgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eE7akozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eE7ak4zgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_eE7alIzgEe2OGa-MKLeAmA" comments="__Ru9kIzgEe2OGa-MKLeAmA" targetConnectionVisual="__RwLsIzgEe2OGa-MKLeAmA" name="calculatePrice">
+      <modelElement href="Uebung08_Flooring.uml#_cLqyx4zgEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_eE7alYzgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eE7alozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eE7al4zgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLqyyIzgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eE7amIzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ptex8IzgEe2OGa-MKLeAmA" abstractOperation="true" name="getPricePerSquareMeter">
+      <modelElement href="Uebung08_Flooring.uml#_ptYEQIzgEe2OGa-MKLeAmA"/>
+      <visibility xmi:id="_ptex8YzgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_ptex8ozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ptex84zgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_ptYrUIzgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_ptex9IzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_eFFLcIzgEe2OGa-MKLeAmA" name="Tiling" generalizations="_eFEkYIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#_cLoWgYzgEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_eFFLcYzgEe2OGa-MKLeAmA" position="224.0,429.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_eFFLcozgEe2OGa-MKLeAmA" keyword="sameFile"/>
+    <visibility xmi:id="_eFFLc4zgEe2OGa-MKLeAmA" label="~"/>
+    <operations xmi:id="_eFFLdIzgEe2OGa-MKLeAmA" name="Tiling">
+      <modelElement href="Uebung08_Flooring.uml#_cLo9kYzgEe2OGa-MKLeAmA"/>
+      <keywords xmi:id="_eFFLdYzgEe2OGa-MKLeAmA" keyword="create"/>
+      <visibility xmi:id="_eFFLdozgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eFFLd4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eFFLeIzgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLo9l4zgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eFFLeYzgEe2OGa-MKLeAmA" name="Tiling">
+          <modelElement href="Uebung08_Flooring.uml#_cLoWgYzgEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_eFFLeozgEe2OGa-MKLeAmA" name="baseRatePrice">
+        <modelElement href="Uebung08_Flooring.uml#_cLo9kozgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFFLe4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFFLfIzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_eFFLfYzgEe2OGa-MKLeAmA" name="surfaceArea">
+        <modelElement href="Uebung08_Flooring.uml#_cLo9k4zgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFFLfozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFFLf4zgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_eFFLgIzgEe2OGa-MKLeAmA" name="fixedPricePerSquareMeter">
+        <modelElement href="Uebung08_Flooring.uml#_cLo9lIzgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFFLgYzgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFFLgozgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_eFFLg4zgEe2OGa-MKLeAmA" name="getPricePerSquareMeter">
+      <modelElement href="Uebung08_Flooring.uml#_cLo9mIzgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_eFFLhIzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_cLpkoYzgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_eFFLhYzgEe2OGa-MKLeAmA" name="Annotations">
+        <modelElement href="Uebung08_Flooring.uml#_cLpkoozgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_eFFLhozgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eFFLh4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eFFLiIzgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLpkoIzgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eFFLiYzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_eFHnsIzgEe2OGa-MKLeAmA" name="Parquet" generalizations="_eFGZkIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#_cLpkpIzgEe2OGa-MKLeAmA"/>
+    <visualProperties xmi:id="_eFHnsYzgEe2OGa-MKLeAmA" position="255.0,579.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_eFHnsozgEe2OGa-MKLeAmA" keyword="sameFile"/>
+    <visibility xmi:id="_eFHns4zgEe2OGa-MKLeAmA" label="~"/>
+    <attributes xmi:id="_eFHntIzgEe2OGa-MKLeAmA" name="thickness">
+      <modelElement href="Uebung08_Flooring.uml#_cLudJIzgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_eFHntYzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_cLudJYzgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_eFHntozgEe2OGa-MKLeAmA" label="-"/>
+      <cardinality xmi:id="_eFHnt4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <type xmi:id="_eFHnuIzgEe2OGa-MKLeAmA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_eFHnuYzgEe2OGa-MKLeAmA" name="Parquet">
+      <modelElement href="Uebung08_Flooring.uml#_cLqLsIzgEe2OGa-MKLeAmA"/>
+      <keywords xmi:id="_eFHnuozgEe2OGa-MKLeAmA" keyword="create"/>
+      <visibility xmi:id="_eFHnu4zgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eFHnvIzgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eFHnvYzgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLtozgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eFHnvozgEe2OGa-MKLeAmA" name="Parquet">
+          <modelElement href="Uebung08_Flooring.uml#_cLpkpIzgEe2OGa-MKLeAmA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_eFHnv4zgEe2OGa-MKLeAmA" name="baseRatePrice">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLsYzgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFHnwIzgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFHnwYzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_eFHnwozgEe2OGa-MKLeAmA" name="surfaceArea">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLsozgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFHnw4zgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFHnxIzgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_eFHnxYzgEe2OGa-MKLeAmA" name="thickness">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLs4zgEe2OGa-MKLeAmA"/>
+        <cardinality xmi:id="_eFHnxozgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+        <type xmi:id="_eFHnx4zgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_eFHnyIzgEe2OGa-MKLeAmA" name="getPricePerSquareMeter">
+      <modelElement href="Uebung08_Flooring.uml#_cLqLt4zgEe2OGa-MKLeAmA"/>
+      <stereotypes xmi:id="_eFHnyYzgEe2OGa-MKLeAmA" name="LegacyStyledElement">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLuYzgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_eFHnyozgEe2OGa-MKLeAmA" name="Annotations">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLuozgEe2OGa-MKLeAmA"/>
+      </stereotypes>
+      <visibility xmi:id="_eFHny4zgEe2OGa-MKLeAmA" label="+"/>
+      <cardinality xmi:id="_eFHnzIzgEe2OGa-MKLeAmA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_eFHnzYzgEe2OGa-MKLeAmA">
+        <modelElement href="Uebung08_Flooring.uml#_cLqLuIzgEe2OGa-MKLeAmA"/>
+        <type xmi:id="_eFHnzozgEe2OGa-MKLeAmA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__Rr6QIzgEe2OGa-MKLeAmA" sourceConnectionVisual="__RtvcIzgEe2OGa-MKLeAmA" text="@author Jan Zimmer&#xD;&#xA;last modified 05.01.2023&#xD;&#xA;&#xD;&#xA;Price calculation using a template method, since we're establishing a common algorithm (price calculation) which will be modified in part by subclasses." item="_eE7acIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#__RmasIzgEe2OGa-MKLeAmA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="__Ru9kIzgEe2OGa-MKLeAmA" sourceConnectionVisual="__RwLsIzgEe2OGa-MKLeAmA" text="This is a algorithm common to all types of flooring for calculating their price. Price per m² differs between different types of flooring and is calculated using its own algorithm,&#xD;&#xA;&#x9; * which is why calculation of this field is delegated to subclasses of Flooring." item="_eE7alIzgEe2OGa-MKLeAmA">
+    <modelElement href="Uebung08_Flooring.uml#__RmasYzgEe2OGa-MKLeAmA"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
