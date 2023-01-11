@@ -1,0 +1,61 @@
+Aufgabe 1 - Anforderungsanalyse
+
+a) Unter Verfolgbarkeit von Anforderungen versteht man die Möglichkeit, während des gesamten Softwareentwicklungszyklus nachzuvollziehen, wie Anforderungen zusammenhängen und wie sich Änderungen an einer Anforderung auf andere Teile des Systems auswirken könnten. Sie kann in Artefakten wie einer traceability matrix visualisiert werden.
+
+b) Anforderungen können auch nach einer Implementierung noch geändert werden. Dabei bleibt nachvollziehbar, welche Komponenten des Softwaresystem von solchen Änderungen betroffen wären.
+
+c) Durch Anforderungsmanagementsysteme, Nachverfolgbarkeitsmatrizen, sinnvolle Namenskonventionen, Versionskontrollsysteme
+
+d) Funktionale Anforderungen: Beschreiben Aufgaben, die das Softwaresystem ausführen können muss. Bsp.: eine Datenbankschnittstelle soll dem User die Möglichkeit geben, Datensätze anzulegen, zu lesen, zu aktualisieren und zu löschen.
+Nicht-Funktionale Anforderungen: Beschreiben Merkmale des Softwaresystems, die festlegen wie das System funktioniert, nicht welche Funktion es hat. Bsp.: eine Datenbankschnittstelle darf nicht anfällig gegen SQL-Injection sein.
+
+Aufgabe 2 - Versionsverwaltung
+
+a) 	Mögliche Anforderungen wären:
+
+	- Branching und Merging zum Ermöglichen simultanen Arbeitens
+	- Gute Skalierbarkeit
+	- Revisionshistorien, Versionierung und Logging
+	- ACLs
+	- Berichte und Metriken
+	- Cross Platform Fähigkeit#
+	- Quelloffen
+	- Integritätssicherheit
+	- Stabil, zuverlässig, gepflegt
+
+b) Dazu wird ein Repository benötigt, das von den einzelnen Teammitgliedern geklont wird. Jedes Feature wird auf einem eigenen Branch entwickelt.
+Änderungen werden zunächst lokal comitted und dann auf den Remote Branch gepusht. Soll ein Feature Branch in dem Master Branch gemerged werden, wird ein entsprechende Pull Request eingereicht.
+Anschließend kann gemerged werden. Etwaige Merge Konflikte müssen behoben werden. Andere Teammitglieder können Änderungen im Remote Repository jederzeit pullen.
+
+Aufgabe 3 - Scrum
+
+a) Product und Sprint Backlog unterscheiden sich in ihrem Zeitrahmen (langfristig vs. kurzfristigen) und in ihrem Verwalter (Product Owner vs. Entwicklungsteam).
+
+Bsp.:	Backlog Item					|				Tasks
+		--------------------------------|--------------------------------				
+		Zwei-Faktor-Authentifizierung	|	1) 2FA-Methoden recherchieren und 
+		implementieren 					|	Auswahl treffen
+										|
+										|	2) User Flow Chart und Mockups für 2FA-
+										|	Screen erstellen
+										|
+										|	3) Implementierung von 2FA
+										|
+										|	4) Testfälle erstellen
+										|
+										|	5) User-Akzeptanz testen
+										|
+										|	6) Dokumentation anfertigen
+										|
+										|	7) Sicherheits Audit und Penetrations-
+										|	test durchführen
+										|
+										|	8) Trouble Shooting Charts für Kundenservice
+										|
+										|	9) Deployment
+										|
+
+b) Das Abarbeiten des Product Backlogs ist ein inkrementeller Prozess. Das fertige Produkt wird schrittweise, Feature für Feature, aufgebaut.
+Sprints bzw. Sprint Retrospektiven und Daily Stand-Ups erlauben das Diskutieren und Identifizieren von Problempunkten erlauben so, Feedback iterativ in den Entwicklungsprozess einfließen zu lassen.
+
+c) Es dient zur Visualisierung des Fortschritts einzelner Tasks während eines Sprints. In der Regel besteht es aus mehreren Spalten, die einzelne Zustände repräsentieren sollen (ToDo, WIP, Done).
